@@ -1,5 +1,5 @@
 let boards = []
-const getAllBoards = () =>boards
+const getAllBoards = () => boards
 const setBoards = (array) =>{
   boards = array
 }
