@@ -1,6 +1,6 @@
 let boards = []
-const getAllBoards = () => boards
-const setBoards = (array) =>{
+const getAllBoards = async () => boards
+const setBoards = async (array) =>{
   boards = array
 }
 

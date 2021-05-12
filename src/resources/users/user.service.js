@@ -1,9 +1,10 @@
 const { setUsers, getAll } = require( './user.memory.repository' );
+const {getTasks, setTasks} = require("../tasks/tasks.memorry.repository")
 
 
-const getById = (users, id) => users.find( user => user.id === id );
-const updateUser = (login, password, name, id) => {
-  const newUsers = getAll().map( user => {
+const getById = async (users, id) => users.find( user => user.id === id );
+const updateUser = async (login, password, name, id) => {
+  const newUsers = await getAll().map( user => {
     if (user.id === id) {
       return { ...user, name, login, password };
     }
@@ -13,10 +14,18 @@ const updateUser = (login, password, name, id) => {
   return newUsers.find( user => user.id === id );
 
 };
-const deleteUser = (id) => {
-  const candidateDelete = getAll().find( user => user.id === id )
-  const candidate = getAll().filter( user => user.id !== id )
+const deleteUser = async (id) => {
+  const candidateDelete = await getAll().find( user => user.id === id )
+  const candidate = await getAll().filter( user => user.id !== id )
   setUsers(candidate)
+  const tasks = await getTasks()
+  const filteredTasks = tasks.map(task=> {
+    if(task.userId === id) return {...task, userId: null}
+    return task
+  })
+  await setTasks(filteredTasks)
+  
+
   return !!candidateDelete
 };
 
