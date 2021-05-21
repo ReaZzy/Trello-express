@@ -17,15 +17,6 @@ class User {
     const { id, name, login } = user;
     return { id, name, login };
   }
-
-  static createUser(name, login, password){
-    if( name && login && password){
-      const candidate = new User({name, login, password})
-      return User.toResponse(candidate)
-    }
-    return null
-  }
-
 }
 
 module.exports = User;

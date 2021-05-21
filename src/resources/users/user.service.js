@@ -1,35 +1,40 @@
-const { setUsers, getAll } = require( './user.memory.repository' );
-const {getTasks, setTasks} = require("../tasks/tasks.memorry.repository")
+const User = require("./user.model")
+const {getData, getById, setData, updateData, deleteData} = require("../../db")
 
-
-const getById = async (users, id) => users.find( user => user.id === id );
-const updateUser = async (login, password, name, id) => {
-  const newUsers = await getAll().map( user => {
-    if (user.id === id) {
-      return { ...user, name, login, password };
-    }
-    return user;
-  } );
-  setUsers( newUsers );
-  return newUsers.find( user => user.id === id );
-
+const getAll = async() => getData("users")
+const getUserById = async (id) =>{
+  const users = await getById("users", id)
+  return User.toResponse(users);
+}
+const updateUser = async (data) => {
+  const newUsers = await updateData("users", data)
+  return User.toResponse(newUsers);
 };
+
+const createUser = async (name, login, password) =>{
+  const candidate = new User({ name, login, password} );
+  await setData("users", [...await getAll(), candidate])
+  return User.toResponse(candidate)
+}
+
 const deleteUser = async (id) => {
-  const candidateDelete = await getAll().find( user => user.id === id )
-  const candidate = await getAll().filter( user => user.id !== id )
-  setUsers(candidate)
-  const tasks = await getTasks()
-  const filteredTasks = tasks.map(task=> {
-    if(task.userId === id) return {...task, userId: null}
-    return task
-  })
-  await setTasks(filteredTasks)
-  
+  const deletedUser = await deleteData("users", id)
 
-  return !!candidateDelete
+  const tasks = await getData("tasks");
+  const filteredTasks = tasks.map( task => {
+    if (task.userId === id) return { ...task, userId: null };
+    return task;
+  } );
+  await setData("tasks", filteredTasks );
+
+  return deletedUser
 };
 
-module.exports.getById = getById;
-module.exports.updateUser = updateUser;
-module.exports.deleteUser = deleteUser;
+module.exports = {
+  getAll,
+  getUserById,
+  updateUser,
+  createUser,
+  deleteUser
+}
 
