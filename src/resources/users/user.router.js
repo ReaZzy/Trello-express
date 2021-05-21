@@ -1,7 +1,6 @@
 const router = require( 'express' ).Router();
 const User = require( './user.model' );
-const { getById, updateUser, deleteUser } = require( './user.service' );
-const { getAll, setUsers } = require( './user.memory.repository' );
+const { getUserById, updateUser, deleteUser, createUser, getAll } = require( './user.service' );
 
 router.route( '/' ).get( async (req, res) => {
   const users = await getAll();
@@ -12,37 +11,27 @@ router.route( '/' ).get( async (req, res) => {
 router.route( '/' ).post( async (req, res) => {
   try {
     const { name, login, password } = req.body;
-    const candidate = User.createUser( name, login, password );
-    setUsers([...await getAll(), candidate])
-    await res.status( 201 ).json( candidate );
-
+    const candidate = await createUser( name, login, password );
+    return res.status( 201 ).json( candidate );
   } catch (e) {
-    await res.status( 400 ).json( { msg: 'Bad request' } );
-    throw new Error( 'Bad request' );
+    return res.status( 400 ).json( { msg: 'Bad request' } );
   }
 } );
 
 router.route( `/:id` ).get( async (req, res) => {
-  try {
-    const users = await getAll();
-    const candidate = await getById( users, req.params.id );
-    if (candidate) await res.status( 200 ).json( candidate );
-    else await res.status( 404 ).json( { msg: 'User not found' } );
-  } catch (e) {
-    throw new Error( 'Bad request' );
-  }
+  const candidate = await getUserById( req.params.id );
+  if (candidate) await res.status( 200 ).json( candidate );
+  else await res.status( 404 ).json( { msg: 'User not found' } );
 
 } );
 router.route( `/:id` ).put( async (req, res) => {
   try {
-    const { name, login, password } = req.body;
-    const candidate = await updateUser( login, password, name, req.params.id );
+    const candidate = await updateUser( { ...req.body, id:req.params.id } );
     if (candidate) return res.status( 200 ).json( candidate );
     return res.status( 400 ).json( { msg: 'Bad request' } );
 
   } catch (e) {
-    await res.status( 400 ).json( { msg: 'Bad request' } );
-    throw new Error( 'Bad request' );
+    return res.status( 400 ).json( { msg: 'Bad request' } );
   }
 
 } );
@@ -55,8 +44,7 @@ router.route( '/:id' ).delete( async (req, res) => {
     }
     return res.status( 404 ).json( { msg: 'User not found' } );
   } catch (e) {
-    await res.status( 400 ).json( { msg: 'Bad request' } );
-    throw new Error( 'Bad request' );
+    return res.status( 400 ).json( { msg: 'Bad request' } );
   }
 } );
 

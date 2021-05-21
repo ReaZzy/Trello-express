@@ -1,33 +1,41 @@
-const { getTasks, setTasks } = require( '../tasks/tasks.memorry.repository' );
-const { setBoards, getAllBoards } = require( './boards.memory.repository' );
+const { Board } = require( './boards.model' );
+const { getData, getById, setData, deleteData, updateData } = require( '../../db' );
 
-const getById = async (array, id) => array.find( board => board.id === id );
+const getAllBoards = async () => {
+  const boards = await getData( 'boards' );
+  return boards;
+};
+
+const getBoardById = async (id) => {
+  const boards = await getById( 'boards', id );
+  return boards;
+};
+
+const createBoard = async (title, columns) => {
+  const candidate = await new Board( { title, columns } );
+  await setData( "boards",[...await getAllBoards(), candidate] );
+  return candidate;
+};
 
 const updateBoard = async (boardUpdate, id) => {
-  const boards = await getAllBoards();
-  const newBoards = boards.map( board => {
-    if (board.id === id) {
-      return { ...board, ...boardUpdate };
-    }
-    return board;
-  } );
-  await setBoards( newBoards );
-  return newBoards.find( e => e.id === id );
+  const candidate = await updateData("boards", {...boardUpdate, id})
+  return candidate
 };
 
 const deleteBoard = async (id) => {
-  const boards = await getAllBoards();
-  const candidateDelete = boards.find( board => board.id === id );
-  const candidate = boards.filter( board => board.id !== id );
-  await setBoards( candidate );
+  const candidateDelete = await deleteData("boards", id)
 
-  const tasks = await getTasks();
+  const tasks = await getData("tasks");
   const filteredTasks = tasks.filter( task => task.boardId !== id );
-  await setTasks( filteredTasks );
+  await setData("tasks", filteredTasks );
 
   return !!candidateDelete;
 };
 
-module.exports.getById = getById;
-module.exports.updateBoard = updateBoard;
-module.exports.deleteBoard = deleteBoard;
+module.exports = {
+  getAllBoards,
+  getBoardById,
+  updateBoard,
+  deleteBoard,
+  createBoard
+};
