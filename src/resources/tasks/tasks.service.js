@@ -11,6 +11,20 @@ const getTaskByBoardId = async (boardId, taskId) =>{
   return candidate
 }
 
+/**
+ * Create new task
+ * @param {string} title Task title
+ * @param {number} order Task title
+ * @param {description} description Task description
+ * @param {userId} userId Task userId
+ * @param {boardId} boardId boardId boardId
+ * @param {columnId} columnId Task columnId
+ * @returns {Task}
+ *
+ * @example
+ * const task = await createTask("Fix menu", 1, "qwerty", "dasd-124asd", "34asdas-fds", "dsa5125r-dsadas")
+ */
+
 const createTask = async (title,order,description,userId,boardId,columnId)=>{
   const candidate = new Task({title,order,description,userId,boardId,columnId})
   const tasks = await getData("tasks")
