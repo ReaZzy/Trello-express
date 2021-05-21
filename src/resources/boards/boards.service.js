@@ -11,6 +11,16 @@ const getBoardById = async (id) => {
   return boards;
 };
 
+/**
+ * Create new board
+ * @param {string} title Board title
+ * @param {columns[]} columns Board columns
+ * @returns {Board}
+ *
+ * @example
+ * const board = await createBoard("Done", [])
+ */
+
 const createBoard = async (title, columns) => {
   const candidate = await new Board( { title, columns } );
   await setData( "boards",[...await getAllBoards(), candidate] );
