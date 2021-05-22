@@ -5,6 +5,7 @@ const YAML = require('yamljs');
 const userRouter = require('./resources/users/user.router');
 const boardRouter = require('./resources/boards/boards.router');
 const tasksRouter = require('./resources/tasks/tasks.router');
+import { Request, Response, NextFunction } from 'express';
 
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
@@ -12,8 +13,7 @@ const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 app.use(express.json());
 
 app.use('/doc', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
-
-app.use('/', (req, res, next) => {
+app.use('/', (req:Request, res:Response, next:NextFunction) => {
   if (req.originalUrl === '/') {
     res.send('Service is running!');
     return;

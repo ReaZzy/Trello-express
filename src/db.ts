@@ -1,4 +1,14 @@
-const db = {
+import {
+  DB,
+  GetDataType,
+  SetDataType,
+  GetByIdType,
+  UpdateDataType,
+  DeleteDataType
+} from './types';
+
+
+const db: DB = {
   'users': [],
   'boards': [],
   'tasks': []
@@ -55,8 +65,7 @@ const db = {
  * @example
  * const users = await getData("users")
  */
-const getData = async (arr) => db[arr];
-
+const getData: GetDataType = async (arr) => db[arr];
 
 /**
  * Set value to entity by name
@@ -70,10 +79,11 @@ const getData = async (arr) => db[arr];
  *   name: "John"
  * }])
  */
-const setData = async (arr, value) => {
-  db[arr] = value;
-};
 
+const setData:SetDataType = async (arr, value) => {
+  //@ts-ignore
+  db[arr] = value;
+}
 /**
  * Returns element by id
  * @param {arr} arr Database entity
@@ -83,9 +93,9 @@ const setData = async (arr, value) => {
  * @example
  * const user = await getById("users", "Fdcv421-dsafGb-DSAD-gGs")
  */
-const getById = async (arr, id) => {
-  const candidate = await getData( arr );
-  return candidate.find( element => element.id === id );
+const getById:GetByIdType = async (arr, id) => {
+  const candidate = await getData(arr);
+  return candidate.find(element => element.id === id);
 };
 
 /**
@@ -101,16 +111,16 @@ const getById = async (arr, id) => {
  *   name: "John"
  * })
  */
-const updateData = async (arr, data) => {
-  const candidate = await getData( arr );
-  const newCandidate = candidate.map( user => {
+const updateData:UpdateDataType = async (arr, data) => {
+  const candidate = await getData(arr);
+  const newCandidate = candidate.map(user => {
     if (user.id === data.id) {
       return { ...user, ...data };
     }
     return user;
-  } );
-  await setData( arr, newCandidate );
-  return newCandidate.find( user => user.id === data.id );
+  });
+  await setData(arr, newCandidate);
+  return newCandidate.find(user => user.id === data.id);
 };
 
 /**
@@ -125,11 +135,11 @@ const updateData = async (arr, data) => {
  *   // Do stuff ...
  * }
  */
-const deleteData = async (arr, id) => {
-  const data = await getData( arr );
-  const candidateDelete = data.find( user => user.id === id );
-  const candidate = data.filter( user => user.id !== id );
-  await setData( arr, candidate );
+const deleteData:DeleteDataType = async (arr, id) => {
+  const data = await getData(arr);
+  const candidateDelete = data.find(user => user.id === id);
+  const candidate = data.filter(user => user.id !== id);
+  await setData(arr, candidate);
 
   return !!candidateDelete;
 };
