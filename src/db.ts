@@ -4,7 +4,7 @@ import {
   SetDataType,
   GetByIdType,
   UpdateDataType,
-  DeleteDataType
+  DeleteDataType, EntityType
 } from './types';
 
 
@@ -81,8 +81,7 @@ const getData: GetDataType = async (arr) => db[arr];
  */
 
 const setData:SetDataType = async (arr, value) => {
-  //@ts-ignore
-  db[arr] = value;
+  (db[arr] as EntityType[])  = value;
 }
 /**
  * Returns element by id
@@ -95,7 +94,7 @@ const setData:SetDataType = async (arr, value) => {
  */
 const getById:GetByIdType = async (arr, id) => {
   const candidate = await getData(arr);
-  return candidate.find(element => element.id === id);
+  return candidate.find((element) => element.id === id);
 };
 
 /**
@@ -136,7 +135,7 @@ const updateData:UpdateDataType = async (arr, data) => {
  * }
  */
 const deleteData:DeleteDataType = async (arr, id) => {
-  const data = await getData(arr);
+  const data= await getData(arr);
   const candidateDelete = data.find(user => user.id === id);
   const candidate = data.filter(user => user.id !== id);
   await setData(arr, candidate);

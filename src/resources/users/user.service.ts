@@ -1,12 +1,15 @@
-const User = require("./user.model")
-const {getData, getById, setData, updateData, deleteData} = require("../../db")
+import { GetByIdType, UpdateDataType, DeleteDataType, UserType, CreateUserType, TaskType } from '../../types';
 
-const getAll = async() => getData("users")
-const getUserById = async (id) =>{
+const User = require("./user.model")
+const {getData, getById, setData, updateData, deleteData} =  require("./../../db")
+
+const getAll = async():Promise<UserType[]> => getData("users")
+
+const getUserById:GetByIdType = async (id) =>{
   const users = await getById("users", id)
   return User.toResponse(users);
 }
-const updateUser = async (data) => {
+const updateUser:UpdateDataType = async (data) => {
   const newUsers = await updateData("users", data)
   return User.toResponse(newUsers);
 };
@@ -22,17 +25,17 @@ const updateUser = async (data) => {
  * const task = await createTask("Fix menu", 1, "qwerty", "dasd-124asd", "34asdas-fds", "dsa5125r-dsadas")
  */
 
-const createUser = async (name, login, password) =>{
+const createUser:CreateUserType = async (name, login, password) =>{
   const candidate = new User({ name, login, password} );
-  await setData("users", [...await getAll(), candidate])
+  const users = await getAll()
+  await setData("users", [...users, candidate])
   return User.toResponse(candidate)
 }
 
-const deleteUser = async (id) => {
+const deleteUser:DeleteDataType = async (_, id) => {
   const deletedUser = await deleteData("users", id)
-
   const tasks = await getData("tasks");
-  const filteredTasks = tasks.map( task => {
+  const filteredTasks = tasks.map( (task:TaskType) => {
     if (task.userId === id) return { ...task, userId: null };
     return task;
   } );

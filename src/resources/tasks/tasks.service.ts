@@ -1,12 +1,21 @@
+import {
+  CreateTaskType,
+  DeleteDataType,
+  GetByIdType,
+  GetTaskByBoardIdType,
+  TaskType,
+  UpdateTaskDataType
+} from '../../types';
+
 const { Task } = require("./tasks.model")
 const {getData, getById, setData, updateData} = require("../../db")
 
-const getTasksByBoardId = async (id) =>{
+const getTasksByBoardId:GetByIdType = async (_, id) =>{
   const candidate = await getData("tasks")
-  return candidate.filter(task=>task.boardId === id)
+  return candidate.filter((task:TaskType)=>task.boardId === id)
 }
 
-const getTaskByBoardId = async (boardId, taskId) =>{
+const getTaskByBoardId:GetTaskByBoardIdType = async (_boardId, taskId) =>{
   const candidate = await getById("tasks", taskId)
   return candidate
 }
@@ -25,23 +34,23 @@ const getTaskByBoardId = async (boardId, taskId) =>{
  * const task = await createTask("Fix menu", 1, "qwerty", "dasd-124asd", "34asdas-fds", "dsa5125r-dsadas")
  */
 
-const createTask = async (title,order,description,userId,boardId,columnId)=>{
+const createTask:CreateTaskType = async (title,order,description,userId,boardId,columnId)=>{
   const candidate = new Task({title,order,description,userId,boardId,columnId})
   const tasks = await getData("tasks")
   await setData("tasks", [...tasks, candidate])
   return candidate
 }
 
-const deleteTask = async (boardId, taskId) =>{
+const deleteTask:DeleteDataType = async (_boardId, taskId) =>{
   const tasks = await getData("tasks")
-  const filteredTasks = tasks.filter(task => task.id !== taskId)
-  const findedTask = tasks.find(task => task.id === taskId && task.boardId === boardId)
+  const filteredTasks = tasks.filter((task:TaskType) => task.id !== taskId)
+  const findedTask = tasks.find((task:TaskType) => task.id === taskId )
   await setData("tasks", filteredTasks)
   return !!findedTask
 }
 
-const updateTask = async (boardId, taskId, object) =>{
-  const candidate = await updateData("tasks", {boardId, taskId, ...object})
+const updateTask:UpdateTaskDataType = async (_boardId, taskId, object) =>{
+  const candidate = await updateData("tasks", {taskId, ...object})
   return candidate
 }
 
