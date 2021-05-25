@@ -1,6 +1,7 @@
-const getAll = async () => {
-  // TODO: mock implementation. should be replaced during task development
-  return [];
-};
+let usersStorage = []
+const getAll = () => usersStorage;
+const setUsers = (array)=> {usersStorage = array}
 
-module.exports = { getAll };
+module.exports.getAll = getAll;
+module.exports.usersStorage = usersStorage
+module.exports.setUsers = setUsers
