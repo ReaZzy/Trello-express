@@ -66,7 +66,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#deleteData">deleteData</a></li><li><a href="global.html#getById">getById</a></li><li><a href="global.html#getData">getData</a></li><li><a href="global.html#setData">setData</a></li><li><a href="global.html#updateData">updateData</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#createBoard">createBoard</a></li><li><a href="global.html#createTask">createTask</a></li><li><a href="global.html#createUser">createUser</a></li><li><a href="global.html#deleteData">deleteData</a></li><li><a href="global.html#getById">getById</a></li><li><a href="global.html#getData">getData</a></li><li><a href="global.html#setData">setData</a></li><li><a href="global.html#updateData">updateData</a></li></ul></div>
                 
             </nav>
         </div>
@@ -160,6 +160,752 @@
 
 
     
+    <h4 class="name" id="createBoard">
+        <a class="href-link" href="#createBoard">#</a>
+        
+            
+                <span class='tag'>async</span>
+            
+        
+        <span class="code-name">
+            
+                createBoard<span class="signature">(title, columns)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Board">Board</a>>}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        Create new board
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>title</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last">Board title</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>columns</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Array.&lt;columns></span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last">Board columns</td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="resources_boards_boards.service.js.html" class="button">View Source</a>
+            <span>
+                <a href="resources_boards_boards.service.js.html">resources/boards/boards.service.js</a>, <a href="resources_boards_boards.service.js.html#line24">line 24</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<span class="param-type">Promise.&lt;<a href="global.html#Board">Board</a>></span>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>const board = await createBoard("Done", [])</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="createTask">
+        <a class="href-link" href="#createTask">#</a>
+        
+            
+                <span class='tag'>async</span>
+            
+        
+        <span class="code-name">
+            
+                createTask<span class="signature">(title, order, description, userId, boardId, columnId)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Task">Task</a>>}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        Create new task
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>title</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last">Task title</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>order</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last">Task title</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>description</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">description</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last">Task description</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>userId</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">userId</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last">Task userId</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>boardId</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boardId</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last">boardId boardId</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>columnId</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">columnId</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last">Task columnId</td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="resources_tasks_tasks.service.js.html" class="button">View Source</a>
+            <span>
+                <a href="resources_tasks_tasks.service.js.html">resources/tasks/tasks.service.js</a>, <a href="resources_tasks_tasks.service.js.html#line28">line 28</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<span class="param-type">Promise.&lt;<a href="global.html#Task">Task</a>></span>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>const task = await createTask("Fix menu", 1, "qwerty", "dasd-124asd", "34asdas-fds", "dsa5125r-dsadas")</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="createUser">
+        <a class="href-link" href="#createUser">#</a>
+        
+            
+                <span class='tag'>async</span>
+            
+        
+        <span class="code-name">
+            
+                createUser<span class="signature">(name, login, password)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#User">User</a>>}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        Create new user
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>name</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last">User name</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>login</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last">User login</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>password</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last">User password</td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="resources_users_user.service.js.html" class="button">View Source</a>
+            <span>
+                <a href="resources_users_user.service.js.html">resources/users/user.service.js</a>, <a href="resources_users_user.service.js.html#line25">line 25</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<span class="param-type">Promise.&lt;<a href="global.html#User">User</a>></span>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>const task = await createTask("Fix menu", 1, "qwerty", "dasd-124asd", "34asdas-fds", "dsa5125r-dsadas")</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+
+    
     <h4 class="name" id="deleteData">
         <a class="href-link" href="#deleteData">#</a>
         
@@ -169,7 +915,7 @@
         
         <span class="code-name">
             
-                deleteData<span class="signature">(arr, id)</span><span class="type-signature"> &rarr; {boolean}</span>
+                deleteData<span class="signature">(arr, id)</span><span class="type-signature"> &rarr; {Promise.&lt;boolean>}</span>
             
         </span>
     </h4>
@@ -340,7 +1086,7 @@
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type">boolean</span>
+<span class="param-type">Promise.&lt;boolean></span>
 
 
     </div>
@@ -376,7 +1122,7 @@
         
         <span class="code-name">
             
-                getById<span class="signature">(arr, id)</span><span class="type-signature"> &rarr; {<a href="global.html#User">User</a>|<a href="global.html#Board">Board</a>|<a href="global.html#Task">Task</a>}</span>
+                getById<span class="signature">(arr, id)</span><span class="type-signature"> &rarr; {Promise.&lt;(<a href="global.html#User">User</a>|<a href="global.html#Board">Board</a>|<a href="global.html#Task">Task</a>)>}</span>
             
         </span>
     </h4>
@@ -547,13 +1293,7 @@
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type"><a href="global.html#User">User</a></span>
-|
-
-<span class="param-type"><a href="global.html#Board">Board</a></span>
-|
-
-<span class="param-type"><a href="global.html#Task">Task</a></span>
+<span class="param-type">Promise.&lt;(<a href="global.html#User">User</a>|<a href="global.html#Board">Board</a>|<a href="global.html#Task">Task</a>)></span>
 
 
     </div>
@@ -589,7 +1329,7 @@
         
         <span class="code-name">
             
-                getData<span class="signature">(arr)</span><span class="type-signature"> &rarr; {Array.&lt;<a href="global.html#User">User</a>>|Array.&lt;<a href="global.html#Board">Board</a>>|Array.&lt;<a href="global.html#Task">Task</a>>}</span>
+                getData<span class="signature">(arr)</span><span class="type-signature"> &rarr; {Promise.&lt;(Array.&lt;<a href="global.html#User">User</a>>|Array.&lt;<a href="global.html#Board">Board</a>>|Array.&lt;<a href="global.html#Task">Task</a>>)>}</span>
             
         </span>
     </h4>
@@ -735,13 +1475,7 @@
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type">Array.&lt;<a href="global.html#User">User</a>></span>
-|
-
-<span class="param-type">Array.&lt;<a href="global.html#Board">Board</a>></span>
-|
-
-<span class="param-type">Array.&lt;<a href="global.html#Task">Task</a>></span>
+<span class="param-type">Promise.&lt;(Array.&lt;<a href="global.html#User">User</a>>|Array.&lt;<a href="global.html#Board">Board</a>>|Array.&lt;<a href="global.html#Task">Task</a>>)></span>
 
 
     </div>
@@ -777,7 +1511,7 @@
         
         <span class="code-name">
             
-                setData<span class="signature">(arr, value)</span><span class="type-signature"> &rarr; {void}</span>
+                setData<span class="signature">(arr, value)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
             
         </span>
     </h4>
@@ -954,7 +1688,7 @@
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type">void</span>
+<span class="param-type">Promise.&lt;void></span>
 
 
     </div>
@@ -990,7 +1724,7 @@
         
         <span class="code-name">
             
-                updateData<span class="signature">(arr, data)</span><span class="type-signature"> &rarr; {<a href="global.html#User">User</a>|<a href="global.html#Board">Board</a>|<a href="global.html#Task">Task</a>}</span>
+                updateData<span class="signature">(arr, data)</span><span class="type-signature"> &rarr; {Promise.&lt;(<a href="global.html#User">User</a>|<a href="global.html#Board">Board</a>|<a href="global.html#Task">Task</a>)>}</span>
             
         </span>
     </h4>
@@ -1167,13 +1901,7 @@
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type"><a href="global.html#User">User</a></span>
-|
-
-<span class="param-type"><a href="global.html#Board">Board</a></span>
-|
-
-<span class="param-type"><a href="global.html#Task">Task</a></span>
+<span class="param-type">Promise.&lt;(<a href="global.html#User">User</a>|<a href="global.html#Board">Board</a>|<a href="global.html#Task">Task</a>)></span>
 
 
     </div>

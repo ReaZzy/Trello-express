@@ -7,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> db.js</title>
+  <title> resources/boards/boards.service.js</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -76,7 +76,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>db.js</h1>
+                    <h1>resources/boards/boards.service.js</h1>
                 </header>
                 
 
@@ -85,149 +85,56 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>const db = {
-  'users': [],
-  'boards': [],
-  'tasks': []
+            <pre class="prettyprint source linenums"><code>const { Board } = require( './boards.model' );
+const { getData, getById, setData, deleteData, updateData } = require( '../../db' );
+
+const getAllBoards = async () => {
+  const boards = await getData( 'boards' );
+  return boards;
+};
+
+const getBoardById = async (id) => {
+  const boards = await getById( 'boards', id );
+  return boards;
 };
 
 /**
- * @typedef {arr} arr
+ * Create new board
+ * @param {string} title Board title
+ * @param {columns[]} columns Board columns
+ * @returns {Promise&lt;Board>}
  *
- * @property {"users"|"boards"|"tasks"} arr Database entity
- * */
-
-/**
- * @typedef {User} User
- *
- * @property {string} id User id
- * @property {string} name User name
- * @property {string} login User login
- * */
-
-/**
- * @typedef {Column} Column
- *
- * @property {string} id Column id
- * @property {string} title Column title
- * @property {number} order Column order
- * */
-
-
-/**
- * @typedef {Board} Board
- *
- * @property {string} id Board id
- * @property {string} title Board title
- * @property {Column[]} columns List of columns
- * */
-
-/**
- * @typedef {Task} Task
- *
- * @property {string} id - Task id
- * @property {string} title - Task title
- * @property {number} order - Task order
- * @property {string} userId - Task userId
- * @property {string} boardId - Task boardId
- * @property {string} columnId - Task columnId
- * */
-
-
-/**
- * Returns entity by name
- * @param {string} arr Database entity
- *
- * @returns {Promise&lt;User[]|Board[]|Task[]>}
  * @example
- * const users = await getData("users")
+ * const board = await createBoard("Done", [])
  */
-const getData = async (arr) => db[arr];
 
-
-/**
- * Set value to entity by name
- * @param {arr} arr Database entity
- * @param {User|Board|Task} value New value
- * @returns {Promise&lt;void>}
- * @example
- * await setData("users", [{
- *   id: "23-dsad-1245g-gfdbncv",
- *   login: "John",
- *   name: "John"
- * }])
- */
-const setData = async (arr, value) => {
-  db[arr] = value;
+const createBoard = async (title, columns) => {
+  const candidate = await new Board( { title, columns } );
+  await setData( "boards",[...await getAllBoards(), candidate] );
+  return candidate;
 };
 
-/**
- * Returns element by id
- * @param {arr} arr Database entity
- * @param {string} id Object id
- * @returns {Promise&lt;User|Board|Task>}
- *
- * @example
- * const user = await getById("users", "Fdcv421-dsafGb-DSAD-gGs")
- */
-const getById = async (arr, id) => {
-  const candidate = await getData( arr );
-  return candidate.find( element => element.id === id );
+const updateBoard = async (boardUpdate, id) => {
+  const candidate = await updateData("boards", {...boardUpdate, id})
+  return candidate
 };
 
-/**
- * Set entity new value by id
- * @param {arr} arr Database entity
- * @param {User|Board|Task} data New value
- * @returns {Promise&lt;User|Board|Task>}
- *
- * @example
- * const updatedTask = await updateData("users", {
- *   id: "23-dsad-1245g-gfdbncv",
- *   login: "John",
- *   name: "John"
- * })
- */
-const updateData = async (arr, data) => {
-  const candidate = await getData( arr );
-  const newCandidate = candidate.map( user => {
-    if (user.id === data.id) {
-      return { ...user, ...data };
-    }
-    return user;
-  } );
-  await setData( arr, newCandidate );
-  return newCandidate.find( user => user.id === data.id );
-};
+const deleteBoard = async (id) => {
+  const candidateDelete = await deleteData("boards", id)
 
-/**
- * Delete entity element by id
- * @param {arr} arr Database entity
- * @param {string} id Object id
- * @returns {Promise&lt;boolean>}
- *
- * @example
- * const deletedBoard = await deleteData("board", "14safas-ggdfg-4634ddgdfs")
- * if(deleteBoard){
- *   // Do stuff ...
- * }
- */
-const deleteData = async (arr, id) => {
-  const data = await getData( arr );
-  const candidateDelete = data.find( user => user.id === id );
-  const candidate = data.filter( user => user.id !== id );
-  await setData( arr, candidate );
+  const tasks = await getData("tasks");
+  const filteredTasks = tasks.filter( task => task.boardId !== id );
+  await setData("tasks", filteredTasks );
 
   return !!candidateDelete;
 };
 
-
 module.exports = {
-  getData,
-  setData,
-  getById,
-  updateData,
-  deleteData
+  getAllBoards,
+  getBoardById,
+  updateBoard,
+  deleteBoard,
+  createBoard
 };</code></pre>
         </article>
     </section>

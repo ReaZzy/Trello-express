@@ -51,7 +51,7 @@ const db = {
  * Returns entity by name
  * @param {string} arr Database entity
  *
- * @returns {User[]|Board[]|Task[]}
+ * @returns {Promise<User[]|Board[]|Task[]>}
  * @example
  * const users = await getData("users")
  */
@@ -62,7 +62,7 @@ const getData = async (arr) => db[arr];
  * Set value to entity by name
  * @param {arr} arr Database entity
  * @param {User|Board|Task} value New value
- * @returns {void}
+ * @returns {Promise<void>}
  * @example
  * await setData("users", [{
  *   id: "23-dsad-1245g-gfdbncv",
@@ -78,7 +78,7 @@ const setData = async (arr, value) => {
  * Returns element by id
  * @param {arr} arr Database entity
  * @param {string} id Object id
- * @returns {User|Board|Task}
+ * @returns {Promise<User|Board|Task>}
  *
  * @example
  * const user = await getById("users", "Fdcv421-dsafGb-DSAD-gGs")
@@ -92,7 +92,7 @@ const getById = async (arr, id) => {
  * Set entity new value by id
  * @param {arr} arr Database entity
  * @param {User|Board|Task} data New value
- * @returns {User|Board|Task}
+ * @returns {Promise<User|Board|Task>}
  *
  * @example
  * const updatedTask = await updateData("users", {
@@ -117,7 +117,7 @@ const updateData = async (arr, data) => {
  * Delete entity element by id
  * @param {arr} arr Database entity
  * @param {string} id Object id
- * @returns {boolean}
+ * @returns {Promise<boolean>}
  *
  * @example
  * const deletedBoard = await deleteData("board", "14safas-ggdfg-4634ddgdfs")

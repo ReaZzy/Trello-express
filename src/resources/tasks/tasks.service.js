@@ -19,7 +19,7 @@ const getTaskByBoardId = async (boardId, taskId) =>{
  * @param {userId} userId Task userId
  * @param {boardId} boardId boardId boardId
  * @param {columnId} columnId Task columnId
- * @returns {Task}
+ * @returns {Promise<Task>}
  *
  * @example
  * const task = await createTask("Fix menu", 1, "qwerty", "dasd-124asd", "34asdas-fds", "dsa5125r-dsadas")
