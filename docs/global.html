@@ -169,7 +169,7 @@
         
         <span class="code-name">
             
-                createBoard<span class="signature">(title, columns)</span><span class="type-signature"> &rarr; {<a href="global.html#Board">Board</a>}</span>
+                createBoard<span class="signature">(title, columns)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Board">Board</a>>}</span>
             
         </span>
     </h4>
@@ -305,7 +305,7 @@
         <p class="tag-source">
             <a href="resources_boards_boards.service.js.html" class="button">View Source</a>
             <span>
-                <a href="resources_boards_boards.service.js.html">resources/boards/boards.service.ts</a>, <a href="resources_boards_boards.service.js.html#line24">line 24</a>
+                <a href="resources_boards_boards.service.js.html">resources/boards/boards.service.js</a>, <a href="resources_boards_boards.service.js.html#line24">line 24</a>
             </span>
         </p>
     
@@ -340,7 +340,7 @@
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type"><a href="global.html#Board">Board</a></span>
+<span class="param-type">Promise.&lt;<a href="global.html#Board">Board</a>></span>
 
 
     </div>
@@ -376,7 +376,7 @@
         
         <span class="code-name">
             
-                createTask<span class="signature">(title, order, description, userId, boardId, columnId)</span><span class="type-signature"> &rarr; {<a href="global.html#Task">Task</a>}</span>
+                createTask<span class="signature">(title, order, description, userId, boardId, columnId)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Task">Task</a>>}</span>
             
         </span>
     </h4>
@@ -612,7 +612,7 @@
         <p class="tag-source">
             <a href="resources_tasks_tasks.service.js.html" class="button">View Source</a>
             <span>
-                <a href="resources_tasks_tasks.service.js.html">resources/tasks/tasks.service.ts</a>, <a href="resources_tasks_tasks.service.js.html#line28">line 28</a>
+                <a href="resources_tasks_tasks.service.js.html">resources/tasks/tasks.service.js</a>, <a href="resources_tasks_tasks.service.js.html#line28">line 28</a>
             </span>
         </p>
     
@@ -647,7 +647,7 @@
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type"><a href="global.html#Task">Task</a></span>
+<span class="param-type">Promise.&lt;<a href="global.html#Task">Task</a>></span>
 
 
     </div>
@@ -683,7 +683,7 @@
         
         <span class="code-name">
             
-                createUser<span class="signature">(name, login, password)</span><span class="type-signature"> &rarr; {<a href="global.html#User">User</a>}</span>
+                createUser<span class="signature">(name, login, password)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#User">User</a>>}</span>
             
         </span>
     </h4>
@@ -844,7 +844,7 @@
         <p class="tag-source">
             <a href="resources_users_user.service.js.html" class="button">View Source</a>
             <span>
-                <a href="resources_users_user.service.js.html">resources/users/user.service.ts</a>, <a href="resources_users_user.service.js.html#line25">line 25</a>
+                <a href="resources_users_user.service.js.html">resources/users/user.service.js</a>, <a href="resources_users_user.service.js.html#line25">line 25</a>
             </span>
         </p>
     
@@ -879,7 +879,7 @@
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type"><a href="global.html#User">User</a></span>
+<span class="param-type">Promise.&lt;<a href="global.html#User">User</a>></span>
 
 
     </div>
@@ -915,7 +915,7 @@
         
         <span class="code-name">
             
-                deleteData<span class="signature">(arr, id)</span><span class="type-signature"> &rarr; {boolean}</span>
+                deleteData<span class="signature">(arr, id)</span><span class="type-signature"> &rarr; {Promise.&lt;boolean>}</span>
             
         </span>
     </h4>
@@ -1086,7 +1086,7 @@
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type">boolean</span>
+<span class="param-type">Promise.&lt;boolean></span>
 
 
     </div>
@@ -1125,7 +1125,7 @@ if(deleteBoard){
         
         <span class="code-name">
             
-                getById<span class="signature">(arr, id)</span><span class="type-signature"> &rarr; {<a href="global.html#User">User</a>|<a href="global.html#Board">Board</a>|<a href="global.html#Task">Task</a>}</span>
+                getById<span class="signature">(arr, id)</span><span class="type-signature"> &rarr; {Promise.&lt;(<a href="global.html#User">User</a>|<a href="global.html#Board">Board</a>|<a href="global.html#Task">Task</a>)>}</span>
             
         </span>
     </h4>
@@ -1296,13 +1296,7 @@ if(deleteBoard){
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type"><a href="global.html#User">User</a></span>
-|
-
-<span class="param-type"><a href="global.html#Board">Board</a></span>
-|
-
-<span class="param-type"><a href="global.html#Task">Task</a></span>
+<span class="param-type">Promise.&lt;(<a href="global.html#User">User</a>|<a href="global.html#Board">Board</a>|<a href="global.html#Task">Task</a>)></span>
 
 
     </div>
@@ -1338,7 +1332,7 @@ if(deleteBoard){
         
         <span class="code-name">
             
-                getData<span class="signature">(arr)</span><span class="type-signature"> &rarr; {Array.&lt;<a href="global.html#User">User</a>>|Array.&lt;<a href="global.html#Board">Board</a>>|Array.&lt;<a href="global.html#Task">Task</a>>}</span>
+                getData<span class="signature">(arr)</span><span class="type-signature"> &rarr; {Promise.&lt;(Array.&lt;<a href="global.html#User">User</a>>|Array.&lt;<a href="global.html#Board">Board</a>>|Array.&lt;<a href="global.html#Task">Task</a>>)>}</span>
             
         </span>
     </h4>
@@ -1484,13 +1478,7 @@ if(deleteBoard){
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type">Array.&lt;<a href="global.html#User">User</a>></span>
-|
-
-<span class="param-type">Array.&lt;<a href="global.html#Board">Board</a>></span>
-|
-
-<span class="param-type">Array.&lt;<a href="global.html#Task">Task</a>></span>
+<span class="param-type">Promise.&lt;(Array.&lt;<a href="global.html#User">User</a>>|Array.&lt;<a href="global.html#Board">Board</a>>|Array.&lt;<a href="global.html#Task">Task</a>>)></span>
 
 
     </div>
@@ -1526,7 +1514,7 @@ if(deleteBoard){
         
         <span class="code-name">
             
-                setData<span class="signature">(arr, value)</span><span class="type-signature"> &rarr; {void}</span>
+                setData<span class="signature">(arr, value)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
             
         </span>
     </h4>
@@ -1703,7 +1691,7 @@ if(deleteBoard){
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type">void</span>
+<span class="param-type">Promise.&lt;void></span>
 
 
     </div>
@@ -1743,7 +1731,7 @@ if(deleteBoard){
         
         <span class="code-name">
             
-                updateData<span class="signature">(arr, data)</span><span class="type-signature"> &rarr; {<a href="global.html#User">User</a>|<a href="global.html#Board">Board</a>|<a href="global.html#Task">Task</a>}</span>
+                updateData<span class="signature">(arr, data)</span><span class="type-signature"> &rarr; {Promise.&lt;(<a href="global.html#User">User</a>|<a href="global.html#Board">Board</a>|<a href="global.html#Task">Task</a>)>}</span>
             
         </span>
     </h4>
@@ -1920,13 +1908,7 @@ if(deleteBoard){
     <div class='column is-5 has-text-left'>
         <label>Type: </label>
         
-<span class="param-type"><a href="global.html#User">User</a></span>
-|
-
-<span class="param-type"><a href="global.html#Board">Board</a></span>
-|
-
-<span class="param-type"><a href="global.html#Task">Task</a></span>
+<span class="param-type">Promise.&lt;(<a href="global.html#User">User</a>|<a href="global.html#Board">Board</a>|<a href="global.html#Task">Task</a>)></span>
 
 
     </div>
