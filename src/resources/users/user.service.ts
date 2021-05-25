@@ -19,7 +19,7 @@ const updateUser:UpdateDataType = async (data) => {
  * @param {string} name User name
  * @param {string} login User login
  * @param {string} password User password
- * @returns {User}
+ * @returns {Promise<User>}
  *
  * @example
  * const task = await createTask("Fix menu", 1, "qwerty", "dasd-124asd", "34asdas-fds", "dsa5125r-dsadas")

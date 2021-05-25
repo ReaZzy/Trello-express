@@ -24,7 +24,7 @@ const getBoardById:GetByIdType = async (_, id) => {
  * Create new board
  * @param {string} title Board title
  * @param {columns[]} columns Board columns
- * @returns {Board}
+ * @returns {Promise<Board>}
  *
  * @example
  * const board = await createBoard("Done", [])
