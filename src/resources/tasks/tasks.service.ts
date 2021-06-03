@@ -12,7 +12,8 @@ const {getData, getById, setData, updateData} = require("../../db")
 
 const getTasksByBoardId:GetByIdType = async (_, id) =>{
   const candidate = await getData("tasks")
-  return candidate.filter((task:TaskType)=>task.boardId === id)
+  if(candidate)  return candidate.filter((task:TaskType)=>task.boardId === id)
+  return null
 }
 
 const getTaskByBoardId:GetTaskByBoardIdType = async (_boardId, taskId) =>{
