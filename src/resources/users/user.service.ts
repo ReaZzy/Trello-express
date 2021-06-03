@@ -6,12 +6,14 @@ const {getData, getById, setData, updateData, deleteData} =  require("./../../db
 const getAll = async():Promise<UserType[]> => getData("users")
 
 const getUserById:GetByIdType = async (id) =>{
-  const users = await getById("users", id)
-  return User.toResponse(users);
+  const users = await getById("users", id);
+  if(users)  return User.toResponse(users)
+  return null
 }
 const updateUser:UpdateDataType = async (data) => {
   const newUsers = await updateData("users", data)
-  return User.toResponse(newUsers);
+  if(newUsers)  return User.toResponse(newUsers)
+  return null
 };
 
 /**
@@ -29,7 +31,8 @@ const createUser:CreateUserType = async (name, login, password) =>{
   const candidate = new User({ name, login, password} );
   const users = await getAll()
   await setData("users", [...users, candidate])
-  return User.toResponse(candidate)
+  if(candidate)  return User.toResponse(candidate)
+  return null
 }
 
 const deleteUser:DeleteDataType = async (_, id) => {
