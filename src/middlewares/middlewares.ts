@@ -6,6 +6,7 @@ const writeStream = fs.createWriteStream("logs.txt", {flags:"a"})
 const errorWriteStream = fs.createWriteStream("errorLogs.txt", {flags:"a"})
 
 
+
 class HttpException extends Error {
   public status: number
 
@@ -16,6 +17,17 @@ class HttpException extends Error {
     this.status = status
     this.message = message
   }
+}
+
+const errLogger = (type:"uncaughtException"|"unhandledRejection",err:HttpException,origin:HttpException) =>{
+  fs.appendFileSync(
+    "errorLogs.txt",
+    `
+[${new Date()}] ${type} 
+Caught exception: ${err}
+Exception origin: ${origin}\n
+    `
+  )
 }
 
 const logRequestMiddleware = (req:Request,res:Response,next:NextFunction) => {
@@ -51,5 +63,6 @@ const catchErrorMiddleware = (err:HttpException, _req:Request, res:Response, nex
 
 module.exports = {
   logRequestMiddleware,
-  catchErrorMiddleware
+  catchErrorMiddleware,
+  errLogger,
 }
