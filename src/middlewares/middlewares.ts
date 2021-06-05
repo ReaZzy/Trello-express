@@ -37,7 +37,7 @@ const logRequestMiddleware = (req:Request,res:Response,next:NextFunction) => {
 ${new Date()}
 ----------------------------------------------
 \n${res.statusCode}
-\n${req.method} ${req.path} 
+\n${req.method} ${req.originalUrl} 
 \nQuery params ${JSON.stringify(req.query)}
 \nBody ${JSON.stringify(req.body)}
 \n
@@ -61,8 +61,23 @@ const catchErrorMiddleware = (err:HttpException, _req:Request, res:Response, nex
   next()
 }
 
-module.exports = {
+const uncaughtException = process.on("uncaughtException", (err:HttpException, origin:HttpException)=> {
+  errLogger("uncaughtException",err,origin)
+  process.exit(1)
+})
+const unhandledRejection = process.on("unhandledRejection", (err:HttpException,origin:HttpException)=> {
+  errLogger("unhandledRejection",err,origin)
+  process.exit(1)
+})
+
+const logger = {
   logRequestMiddleware,
   catchErrorMiddleware,
   errLogger,
+  uncaughtException,
+  unhandledRejection
+}
+
+module.exports = {
+  logger
 }

@@ -25,3 +25,13 @@ Caught exception: Error: Oops!
 Exception origin: [object Promise]
 
     
+[Sat Jun 05 2021 10:35:24 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: Error: Route.acl() requires a callback function but got a [object Object]
+Exception origin: uncaughtException
+
+    
+[Sat Jun 05 2021 10:36:30 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TypeError: app.use() requires a middleware function
+Exception origin: uncaughtException
+
+    
