@@ -1,0 +1,37 @@
+
+[Thu Jun 03 2021 10:49:08 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: Error: Oops!
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 03 2021 10:49:25 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: Error: Oops!
+Exception origin: uncaughtException
+
+    
+[Thu Jun 03 2021 10:49:57 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: undefined
+Exception origin: undefined
+
+    
+[Thu Jun 03 2021 10:52:09 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: Error: Oops!
+Exception origin: [object Promise]
+
+    
+[Thu Jun 03 2021 10:53:11 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: Error: Oops!
+Exception origin: [object Promise]
+
+    
+[Sat Jun 05 2021 10:35:24 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: Error: Route.acl() requires a callback function but got a [object Object]
+Exception origin: uncaughtException
+
+    
+[Sat Jun 05 2021 10:36:30 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TypeError: app.use() requires a middleware function
+Exception origin: uncaughtException
+
+    
