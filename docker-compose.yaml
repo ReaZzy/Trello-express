@@ -6,7 +6,7 @@ services:
     ports:
       - ${PORT}:${PORT}
     depends_on:
-      - postgres
+      - db
     environment:
       - PORT=${PORT}
     volumes:
