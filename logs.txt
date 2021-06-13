@@ -3664,3 +3664,887 @@ Query params {}
 Body {}
 
 
+
+Sun Jun 13 2021 09:04:19 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+404
+
+GET /favicon.ico 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /users/18327bda-2514-4991-ad5f-552359fb4c0a 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+DELETE /users/18327bda-2514-4991-ad5f-552359fb4c0a 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+DELETE /users/b1ab7c69-8f82-46e2-8f31-9073edde34d3 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+PUT /users/c43b27c6-5478-47bb-894e-e4f4a3fc5631 
+
+Query params {}
+
+Body {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"c43b27c6-5478-47bb-894e-e4f4a3fc5631"}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /users/c43b27c6-5478-47bb-894e-e4f4a3fc5631 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+DELETE /users/c43b27c6-5478-47bb-894e-e4f4a3fc5631 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+DELETE /users/1454551c-0240-4ccf-8840-06111f33a451 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards/6f104a44-977d-40cf-b3b0-a0332bb69c90/tasks 
+
+Query params {}
+
+Body {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"15d8a8df-a86b-41ea-8ed1-606aa6cdc2c0","boardId":"6f104a44-977d-40cf-b3b0-a0332bb69c90"}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards/6f104a44-977d-40cf-b3b0-a0332bb69c90/tasks 
+
+Query params {}
+
+Body {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"15d8a8df-a86b-41ea-8ed1-606aa6cdc2c0","boardId":"6f104a44-977d-40cf-b3b0-a0332bb69c90"}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+DELETE /users/15d8a8df-a86b-41ea-8ed1-606aa6cdc2c0 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/6f104a44-977d-40cf-b3b0-a0332bb69c90/tasks/06673403-c51c-4fd1-9809-b9281c6022ff 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/6f104a44-977d-40cf-b3b0-a0332bb69c90/tasks/b1846c85-597e-4364-92e8-0eba80509804 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+204
+
+DELETE /boards/6f104a44-977d-40cf-b3b0-a0332bb69c90/tasks/06673403-c51c-4fd1-9809-b9281c6022ff 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+204
+
+DELETE /boards/6f104a44-977d-40cf-b3b0-a0332bb69c90/tasks/b1846c85-597e-4364-92e8-0eba80509804 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:32 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+DELETE /boards/6f104a44-977d-40cf-b3b0-a0332bb69c90 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/df9c7b6a-60f0-483c-bb38-ec979ace364f 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+DELETE /boards/ddd98a5e-d42d-4062-8b57-52a75262abf1 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+PUT /boards/f8d4117f-4ddf-483e-a072-844a986d9100 
+
+Query params {}
+
+Body {"id":"f8d4117f-4ddf-483e-a072-844a986d9100","title":"Autotest updated board","columns":[{"id":"b88b31a5-d6a0-49fb-99b1-f7ea93204046","title":"Backlog","order":1},{"id":"5f8ae50d-6eea-4278-9e05-adb149d798aa","title":"Sprint","order":2}]}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/f8d4117f-4ddf-483e-a072-844a986d9100 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+DELETE /boards/f8d4117f-4ddf-483e-a072-844a986d9100 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+DELETE /boards/097de329-d3c0-45ed-b364-84d46ca3c322 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+404
+
+GET /boards/097de329-d3c0-45ed-b364-84d46ca3c322 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks 
+
+Query params {}
+
+Body {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"0780861f-e553-4d99-ad50-8f43b0007b52","userId":null,"columnId":null}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks 
+
+Query params {}
+
+Body {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"0780861f-e553-4d99-ad50-8f43b0007b52","userId":null,"columnId":null}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks 
+
+Query params {}
+
+Body {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"0780861f-e553-4d99-ad50-8f43b0007b52","userId":null,"columnId":null}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks 
+
+Query params {}
+
+Body {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"0780861f-e553-4d99-ad50-8f43b0007b52","userId":null,"columnId":null}
+
+
+
+Sun Jun 13 2021 09:04:33 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks 
+
+Query params {}
+
+Body {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"0780861f-e553-4d99-ad50-8f43b0007b52","userId":null,"columnId":null}
+
+
+
+Sun Jun 13 2021 09:04:34 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks/f81ca37d-8b1d-4f31-88b6-1a300a6104e3 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:34 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks/9de26e97-433f-4f34-b00b-21b673b5fe50 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:34 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks/fd6750b8-a600-4cdd-ab28-e067537cb651 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:34 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks/a34a6ccb-e393-4b2b-9b91-0b8335381fce 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:34 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks/40b2f1da-7be9-4f64-b841-52d1d04fbc52 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:34 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+DELETE /boards/0780861f-e553-4d99-ad50-8f43b0007b52 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:34 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+404
+
+GET /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks/40b2f1da-7be9-4f64-b841-52d1d04fbc52 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:34 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+404
+
+GET /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks/a34a6ccb-e393-4b2b-9b91-0b8335381fce 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:34 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+404
+
+GET /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks/f81ca37d-8b1d-4f31-88b6-1a300a6104e3 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:34 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+404
+
+GET /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks/fd6750b8-a600-4cdd-ab28-e067537cb651 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:34 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+404
+
+GET /boards/0780861f-e553-4d99-ad50-8f43b0007b52/tasks/9de26e97-433f-4f34-b00b-21b673b5fe50 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:34 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+DELETE /boards/df9c7b6a-60f0-483c-bb38-ec979ace364f 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66/tasks/be3c1913-9226-4ddf-8356-96e177f97bf3 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+204
+
+DELETE /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66/tasks/be393689-be66-4f33-a19d-f1bb834bc1c9 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+201
+
+POST /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+PUT /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66/tasks/e628f1df-ee3a-4b53-bf8f-cc5f82785a67 
+
+Query params {}
+
+Body {"id":"e628f1df-ee3a-4b53-bf8f-cc5f82785a67","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"8b3324ba-73e4-4257-bba5-13c73f5b1e66","columnId":null}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66/tasks/e628f1df-ee3a-4b53-bf8f-cc5f82785a67 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+GET /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66/tasks/be3c1913-9226-4ddf-8356-96e177f97bf3 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+204
+
+DELETE /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66/tasks/be3c1913-9226-4ddf-8356-96e177f97bf3 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+404
+
+GET /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66/tasks/be3c1913-9226-4ddf-8356-96e177f97bf3 
+
+Query params {}
+
+Body {}
+
+
+
+Sun Jun 13 2021 09:04:35 GMT+0000 (Coordinated Universal Time)
+----------------------------------------------
+
+200
+
+DELETE /boards/8b3324ba-73e4-4257-bba5-13c73f5b1e66 
+
+Query params {}
+
+Body {}
+
+
