@@ -40,3 +40,886 @@ Caught exception: Error: listen EADDRINUSE: address already in use :::4000
 Exception origin: uncaughtException
 
     
+[Wed Jun 16 2021 22:11:07 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m8[0m
+    [7m3[0m const {connectToDb} = require("./common/db")
+    [7m [0m [96m       ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Wed Jun 16 2021 22:12:03 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m8[0m
+    [7m3[0m const {connectToDb} = require("./common/db")
+    [7m [0m [96m       ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Wed Jun 16 2021 22:12:54 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m8[0m
+    [7m3[0m const {connectToDb} = require("./common/db")
+    [7m [0m [96m       ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+[96msrc/common/db.ts[0m:[93m13[0m:[93m20[0m - [91merror[0m[90m TS2339: [0mProperty 'isConnected' does not exist on type 'never'.
+
+[7m13[0m     if(!connection.isConnected) await connection.connect();
+[7m  [0m [91m                   ~~~~~~~~~~~[0m
+[96msrc/common/db.ts[0m:[93m13[0m:[93m50[0m - [91merror[0m[90m TS2339: [0mProperty 'connect' does not exist on type 'never'.
+
+[7m13[0m     if(!connection.isConnected) await connection.connect();
+[7m  [0m [91m                                                 ~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Wed Jun 16 2021 22:13:20 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m8[0m
+    [7m3[0m const {connectToDb} = require("./common/db")
+    [7m [0m [96m       ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:11:39 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m8[0m
+    [7m3[0m const {connectToDb} = require("./common/db")
+    [7m [0m [96m       ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:13:27 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m8[0m
+    [7m3[0m const {connectToDb} = require("./common/db")
+    [7m [0m [96m       ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:14:00 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m8[0m
+    [7m3[0m const {connectToDb} = require("./common/db")
+    [7m [0m [96m       ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:14:26 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m8[0m
+    [7m3[0m const {connectToDb} = require("./common/db")
+    [7m [0m [96m       ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:14:42 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m8[0m
+    [7m3[0m const {connectToDb} = require("./common/db")
+    [7m [0m [96m       ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:15:22 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m9[0m
+    [7m3[0m const { connectToDb } = require('./common/db');
+    [7m [0m [96m        ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:15:37 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m9[0m
+    [7m3[0m const { connectToDb } = require('./common/db');
+    [7m [0m [96m        ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:15:47 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m9[0m
+    [7m3[0m const { connectToDb } = require('./common/db');
+    [7m [0m [96m        ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:16:46 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m9[0m
+    [7m3[0m const { connectToDb } = require('./common/db');
+    [7m [0m [96m        ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:17:34 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m9[0m
+    [7m3[0m const { connectToDb } = require('./common/db');
+    [7m [0m [96m        ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:18:02 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m9[0m
+    [7m3[0m const { connectToDb } = require('./common/db');
+    [7m [0m [96m        ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:19:03 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m9[0m
+    [7m3[0m const { connectToDb } = require('./common/db');
+    [7m [0m [96m        ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:19:46 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m9[0m
+    [7m3[0m const { connectToDb } = require('./common/db');
+    [7m [0m [96m        ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 10:20:08 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/common/db.ts[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'connectToDb'.
+
+[7m4[0m const connectToDb = async () => {
+[7m [0m [91m      ~~~~~~~~~~~[0m
+
+  [96msrc/server.ts[0m:[93m3[0m:[93m9[0m
+    [7m3[0m const { connectToDb } = require('./common/db');
+    [7m [0m [96m        ~~~~~~~~~~~[0m
+    'connectToDb' was also declared here.
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 12:33:52 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m12[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '(user: UserType) => { id: string; name: string; login: string; }' is not assignable to parameter of type '(value: EntityType, index: number, array: EntityType[]) => { id: string; name: string; login: string; }'.
+  Types of parameters 'user' and 'value' are incompatible.
+    Type 'EntityType' is not assignable to type 'UserType'.
+      Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m12[0m   await res.json(users.map(User.toResponse));
+[7m  [0m [91m                           ~~~~~~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 12:34:29 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m12[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '(user: UserType) => { id: string; name: string; login: string; }' is not assignable to parameter of type '(value: EntityType, index: number, array: EntityType[]) => { id: string; name: string; login: string; }'.
+  Types of parameters 'user' and 'value' are incompatible.
+    Type 'EntityType' is not assignable to type 'UserType'.
+      Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m12[0m   await res.json(users.map(User.toResponse));
+[7m  [0m [91m                           ~~~~~~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 13:58:23 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '(user: UserType) => { id: string; name: string; login: string; }' is not assignable to parameter of type '(value: EntityType, index: number, array: EntityType[]) => { id: string; name: string; login: string; }'.
+  Types of parameters 'user' and 'value' are incompatible.
+    Type 'EntityType' is not assignable to type 'UserType'.
+      Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map(User.toResponse));
+[7m  [0m [91m                           ~~~~~~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 13:58:49 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.service.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m13[0m   if (users) return User.toResponse(users);
+[7m  [0m [91m                                    ~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is not assignable to type 'UserType'.
+
+[7m21[0m   if (newUsers) return User.toResponse(newUsers);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:15:10 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '(user: UserType) => { id: string; name: string; login: string; }' is not assignable to parameter of type '(value: EntityType, index: number, array: EntityType[]) => { id: string; name: string; login: string; }'.
+  Types of parameters 'user' and 'value' are incompatible.
+    Type 'EntityType' is not assignable to type 'UserType'.
+      Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map(User.toResponse));
+[7m  [0m [91m                           ~~~~~~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:16:03 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '(user: UserType) => { id: string; name: string; login: string; }' is not assignable to parameter of type '(value: EntityType, index: number, array: EntityType[]) => { id: string; name: string; login: string; }'.
+  Types of parameters 'user' and 'value' are incompatible.
+    Type 'EntityType' is not assignable to type 'UserType'.
+      Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map(User.toResponse));
+[7m  [0m [91m                           ~~~~~~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:16:19 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '(user: UserType) => { id: string; name: string; login: string; }' is not assignable to parameter of type '(value: EntityType, index: number, array: EntityType[]) => { id: string; name: string; login: string; }'.
+  Types of parameters 'user' and 'value' are incompatible.
+    Type 'EntityType' is not assignable to type 'UserType'.
+      Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map(User.toResponse));
+[7m  [0m [91m                           ~~~~~~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:17:11 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '(user: UserType) => { id: string; name: string; login: string; }' is not assignable to parameter of type '(value: EntityType, index: number, array: EntityType[]) => { id: string; name: string; login: string; }'.
+  Types of parameters 'user' and 'value' are incompatible.
+    Type 'EntityType' is not assignable to type 'UserType'.
+      Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map(User.toResponse));
+[7m  [0m [91m                           ~~~~~~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:18:46 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m12[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '(user: UserType) => { id: string; name: string; login: string; }' is not assignable to parameter of type '(value: EntityType, index: number, array: EntityType[]) => { id: string; name: string; login: string; }'.
+  Types of parameters 'user' and 'value' are incompatible.
+    Type 'EntityType' is not assignable to type 'UserType'.
+      Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m12[0m   await res.json(users.map((user:UserType)=>User.toResponse(user)));
+[7m  [0m [91m                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:19:30 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:22:59 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:23:17 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:28:25 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:30:36 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:31:08 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:31:24 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:31:35 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:31:44 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:33:49 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:34:39 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:35:44 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:38:18 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.router.ts[0m:[93m11[0m:[93m54[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m11[0m   await res.json(users.map((user) => User.toResponse(user)));
+[7m  [0m [91m                                                     ~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:39:27 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.service.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m13[0m   if (users) return User.toResponse(users);
+[7m  [0m [91m                                    ~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is not assignable to type 'UserType'.
+
+[7m21[0m   if (newUsers) return User.toResponse(newUsers);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m38[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '(name: string, login: string, password: string) => Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'CreateUserType'.
+  Type 'Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'Promise<UserType>'.
+    Type '{ id: string; name: string; login: string; } | null' is not assignable to type 'UserType'.
+      Type 'null' is not assignable to type 'UserType'.
+
+[7m38[0m export const createUser:CreateUserType = async (name, login, password) => {
+[7m  [0m [91m             ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:42:02 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.service.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m13[0m   if (users) return User.toResponse(users);
+[7m  [0m [91m                                    ~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is not assignable to type 'UserType'.
+
+[7m21[0m   if (newUsers) return User.toResponse(newUsers);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m38[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '(name: string, login: string, password: string) => Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'CreateUserType'.
+  Type 'Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'Promise<UserType>'.
+    Type '{ id: string; name: string; login: string; } | null' is not assignable to type 'UserType'.
+      Type 'null' is not assignable to type 'UserType'.
+
+[7m38[0m export const createUser:CreateUserType = async (name, login, password) => {
+[7m  [0m [91m             ~~~~~~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m41[0m:[93m26[0m - [91merror[0m[90m TS2345: [0mArgument of type 'UserType[]' is not assignable to parameter of type '"users"'.
+
+[7m41[0m   await setData('users', [...users, candidate]);
+[7m  [0m [91m                         ~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m53[0m:[93m26[0m - [91merror[0m[90m TS2345: [0mArgument of type 'TaskType[]' is not assignable to parameter of type '"tasks"'.
+
+[7m53[0m   await setData('tasks', filteredTasks);
+[7m  [0m [91m                         ~~~~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:43:35 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.service.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m13[0m   if (users) return User.toResponse(users);
+[7m  [0m [91m                                    ~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is not assignable to type 'UserType'.
+
+[7m21[0m   if (newUsers) return User.toResponse(newUsers);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m38[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '(name: string, login: string, password: string) => Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'CreateUserType'.
+  Type 'Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'Promise<UserType>'.
+    Type '{ id: string; name: string; login: string; } | null' is not assignable to type 'UserType'.
+      Type 'null' is not assignable to type 'UserType'.
+
+[7m38[0m export const createUser:CreateUserType = async (name, login, password) => {
+[7m  [0m [91m             ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:47:49 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.service.ts[0m:[93m11[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '(_arr: "users" | "boards" | "tasks", id: string) => Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'GetByIdType'.
+  Type 'Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'Promise<EntityType>'.
+    Type '{ id: string; name: string; login: string; } | null' is not assignable to type 'EntityType'.
+      Type 'null' is not assignable to type 'EntityType'.
+
+[7m11[0m export const getUserById:GetByIdType = async (_arr, id) => {
+[7m  [0m [91m             ~~~~~~~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m13[0m   if (users) return User.toResponse(users);
+[7m  [0m [91m                                    ~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is not assignable to type 'UserType'.
+
+[7m21[0m   if (newUsers) return User.toResponse(newUsers);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m38[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '(name: string, login: string, password: string) => Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'CreateUserType'.
+  Type 'Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'Promise<UserType>'.
+    Type '{ id: string; name: string; login: string; } | null' is not assignable to type 'UserType'.
+      Type 'null' is not assignable to type 'UserType'.
+
+[7m38[0m export const createUser:CreateUserType = async (name, login, password) => {
+[7m  [0m [91m             ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:47:57 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.service.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m13[0m   if (users) return User.toResponse(users);
+[7m  [0m [91m                                    ~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is not assignable to type 'UserType'.
+
+[7m21[0m   if (newUsers) return User.toResponse(newUsers);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m38[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '(name: string, login: string, password: string) => Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'CreateUserType'.
+  Type 'Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'Promise<UserType>'.
+    Type '{ id: string; name: string; login: string; } | null' is not assignable to type 'UserType'.
+      Type 'null' is not assignable to type 'UserType'.
+
+[7m38[0m export const createUser:CreateUserType = async (name, login, password) => {
+[7m  [0m [91m             ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:49:34 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.service.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m13[0m   if (users) return User.toResponse(users);
+[7m  [0m [91m                                    ~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is not assignable to type 'UserType'.
+
+[7m21[0m   if (newUsers) return User.toResponse(newUsers);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m38[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '(name: string, login: string, password: string) => Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'CreateUserType'.
+  Type 'Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'Promise<UserType>'.
+    Type '{ id: string; name: string; login: string; } | null' is not assignable to type 'UserType'.
+      Type 'null' is not assignable to type 'UserType'.
+
+[7m38[0m export const createUser:CreateUserType = async (name, login, password) => {
+[7m  [0m [91m             ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:49:50 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.service.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m13[0m   if (users) return User.toResponse(users);
+[7m  [0m [91m                                    ~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is not assignable to type 'UserType'.
+
+[7m21[0m   if (newUsers) return User.toResponse(newUsers);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m38[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '(name: string, login: string, password: string) => Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'CreateUserType'.
+  Type 'Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'Promise<UserType>'.
+    Type '{ id: string; name: string; login: string; } | null' is not assignable to type 'UserType'.
+      Type 'null' is not assignable to type 'UserType'.
+
+[7m38[0m export const createUser:CreateUserType = async (name, login, password) => {
+[7m  [0m [91m             ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:50:06 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.service.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m13[0m   if (users) return User.toResponse(users);
+[7m  [0m [91m                                    ~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is not assignable to type 'UserType'.
+
+[7m21[0m   if (newUsers) return User.toResponse(newUsers);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m38[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '(name: string, login: string, password: string) => Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'CreateUserType'.
+  Type 'Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'Promise<UserType>'.
+    Type '{ id: string; name: string; login: string; } | null' is not assignable to type 'UserType'.
+      Type 'null' is not assignable to type 'UserType'.
+
+[7m38[0m export const createUser:CreateUserType = async (name, login, password) => {
+[7m  [0m [91m             ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:50:11 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.service.ts[0m:[93m13[0m:[93m37[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is missing the following properties from type 'UserType': login, name
+
+[7m13[0m   if (users) return User.toResponse(users);
+[7m  [0m [91m                                    ~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m TS2345: [0mArgument of type 'EntityType' is not assignable to parameter of type 'UserType'.
+  Type 'BoardType' is not assignable to type 'UserType'.
+
+[7m21[0m   if (newUsers) return User.toResponse(newUsers);
+[7m  [0m [91m                                       ~~~~~~~~[0m
+[96msrc/resources/users/user.service.ts[0m:[93m38[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '(name: string, login: string, password: string) => Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'CreateUserType'.
+  Type 'Promise<{ id: string; name: string; login: string; } | null>' is not assignable to type 'Promise<UserType>'.
+    Type '{ id: string; name: string; login: string; } | null' is not assignable to type 'UserType'.
+      Type 'null' is not assignable to type 'UserType'.
+
+[7m38[0m export const createUser:CreateUserType = async (name, login, password) => {
+[7m  [0m [91m             ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:52:27 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.model.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS6133: [0m'EntityType' is declared but its value is never read.
+
+[7m2[0m import { EntityType, UserType } from '../../types';
+[7m [0m [91m         ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:52:58 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.model.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS6133: [0m'EntityType' is declared but its value is never read.
+
+[7m2[0m import { EntityType, UserType } from '../../types';
+[7m [0m [91m         ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:55:25 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.model.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS6133: [0m'EntityType' is declared but its value is never read.
+
+[7m2[0m import { EntityType, UserType } from '../../types';
+[7m [0m [91m         ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:56:02 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.model.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS6133: [0m'EntityType' is declared but its value is never read.
+
+[7m2[0m import { EntityType, UserType } from '../../types';
+[7m [0m [91m         ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:56:07 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.model.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS6133: [0m'EntityType' is declared but its value is never read.
+
+[7m2[0m import { EntityType, UserType } from '../../types';
+[7m [0m [91m         ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:56:18 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.model.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS6133: [0m'EntityType' is declared but its value is never read.
+
+[7m2[0m import { EntityType, UserType } from '../../types';
+[7m [0m [91m         ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:56:28 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.model.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS6133: [0m'EntityType' is declared but its value is never read.
+
+[7m2[0m import { EntityType, UserType } from '../../types';
+[7m [0m [91m         ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:56:33 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.model.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS6133: [0m'EntityType' is declared but its value is never read.
+
+[7m2[0m import { EntityType, UserType } from '../../types';
+[7m [0m [91m         ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:57:40 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.model.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS6133: [0m'EntityType' is declared but its value is never read.
+
+[7m2[0m import { EntityType, UserType } from '../../types';
+[7m [0m [91m         ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:58:00 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.model.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS6133: [0m'EntityType' is declared but its value is never read.
+
+[7m2[0m import { EntityType, UserType } from '../../types';
+[7m [0m [91m         ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 15:58:32 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.model.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS6133: [0m'EntityType' is declared but its value is never read.
+
+[7m2[0m import { EntityType, UserType } from '../../types';
+[7m [0m [91m         ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    
+[Thu Jun 17 2021 16:02:38 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/resources/users/user.model.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS6133: [0m'EntityType' is declared but its value is never read.
+
+[7m2[0m import { EntityType, UserType } from '../../types';
+[7m [0m [91m         ~~~~~~~~~~[0m
+
+Exception origin: uncaughtException
+
+    

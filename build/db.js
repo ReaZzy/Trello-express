@@ -1,22 +1,13 @@
-import {
-  DB,
-  SetDataType,
-  UpdateDataType,
-  DeleteDataType, EntityType, ArrType,
-} from './types';
-
-export const db: DB = {
-  users: [],
-  boards: [],
-  tasks: [],
+export const db = {
+    users: [],
+    boards: [],
+    tasks: [],
 };
-
 /**
  * @typedef {arr} arr
  *
  * @property {"users"|"boards"|"tasks"} arr Database entity
  * */
-
 /**
  * @typedef {User} User
  *
@@ -24,7 +15,6 @@ export const db: DB = {
  * @property {string} name User name
  * @property {string} login User login
  * */
-
 /**
  * @typedef {Column} Column
  *
@@ -32,7 +22,6 @@ export const db: DB = {
  * @property {string} title Column title
  * @property {number} order Column order
  * */
-
 /**
  * @typedef {Board} Board
  *
@@ -40,7 +29,6 @@ export const db: DB = {
  * @property {string} title Board title
  * @property {Column[]} columns List of columns
  * */
-
 /**
  * @typedef {Task} Task
  *
@@ -51,7 +39,6 @@ export const db: DB = {
  * @property {string} boardId - Task boardId
  * @property {string} columnId - Task columnId
  * */
-
 /**
  * Returns entity by name
  * @param {string} arr Database entity
@@ -60,8 +47,7 @@ export const db: DB = {
  * @example
  * const users = await getData("users")
  */
-export const getData = async <Key extends keyof DB>(arr: Key) => db[arr];
-
+export const getData = async (arr) => db[arr];
 /**
  * Set value to entity by name
  * @param {arr} arr Database entity
@@ -74,9 +60,8 @@ export const getData = async <Key extends keyof DB>(arr: Key) => db[arr];
  *   name: "John"
  * }])
  */
-
-export const setData:SetDataType = async (arr, value) => {
-  (db[arr] as EntityType[]) = value;
+export const setData = async (arr, value) => {
+    db[arr] = value;
 };
 /**
  * Returns element by id
@@ -87,11 +72,10 @@ export const setData:SetDataType = async (arr, value) => {
  * @example
  * const user = await getById("users", "Fdcv421-dsafGb-DSAD-gGs")
  */
-export const getById = async (arr:ArrType, id:string) => {
-  const candidate:EntityType[] = await getData(arr);
-  return candidate.find((element:EntityType) => element.id === id);
+export const getById = async (arr, id) => {
+    const candidate = await getData(arr);
+    return candidate.find((element) => element.id === id);
 };
-
 /**
  * Set entity new value by id
  * @param {arr} arr Database entity
@@ -105,18 +89,17 @@ export const getById = async (arr:ArrType, id:string) => {
  *   name: "John"
  * })
  */
-export const updateData:UpdateDataType = async (arr, data) => {
-  const candidate:EntityType[] = await getData(arr);
-  const newCandidate = candidate.map((user) => {
-    if (user.id === data.id) {
-      return { ...user, ...data };
-    }
-    return user;
-  });
-  await setData(arr, newCandidate);
-  return newCandidate.find((user) => user.id === data.id);
+export const updateData = async (arr, data) => {
+    const candidate = await getData(arr);
+    const newCandidate = candidate.map((user) => {
+        if (user.id === data.id) {
+            return { ...user, ...data };
+        }
+        return user;
+    });
+    await setData(arr, newCandidate);
+    return newCandidate.find((user) => user.id === data.id);
 };
-
 /**
  * Delete entity element by id
  * @param {arr} arr Database entity
@@ -129,11 +112,10 @@ export const updateData:UpdateDataType = async (arr, data) => {
  *   // Do stuff ...
  * }
  */
-export const deleteData:DeleteDataType = async (arr, id) => {
-  const data:EntityType[] = await getData(arr);
-  const candidateDelete = data.find((user) => user.id === id);
-  const candidate = data.filter((user) => user.id !== id);
-  await setData(arr, candidate);
-
-  return !!candidateDelete;
+export const deleteData = async (arr, id) => {
+    const data = await getData(arr);
+    const candidateDelete = data.find((user) => user.id === id);
+    const candidate = data.filter((user) => user.id !== id);
+    await setData(arr, candidate);
+    return !!candidateDelete;
 };
