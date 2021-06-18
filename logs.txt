@@ -4548,3 +4548,874 @@ Query params {}
 Body {}
 
 
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /users/bacffc70-c1e8-4023-a1a9-2f35d8bc0ca1 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /users/bacffc70-c1e8-4023-a1a9-2f35d8bc0ca1 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /users/9f3dec38-ea24-4ca4-8cb8-0df6d2a7f2f5 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+PUT /users/71e5a22d-8aa7-4340-8043-2907d2382510 
+
+Query params {}
+
+Body {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"71e5a22d-8aa7-4340-8043-2907d2382510"}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /users/71e5a22d-8aa7-4340-8043-2907d2382510 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /users/71e5a22d-8aa7-4340-8043-2907d2382510 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /users/d890cb0b-1d84-4419-a48d-92a7025a281b 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/e0e95ed7-cfd7-40ea-8534-4c018cb19ef5/tasks 
+
+Query params {}
+
+Body {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"53f4a655-ad8b-4729-b8fe-e69f46015cd4","boardId":"e0e95ed7-cfd7-40ea-8534-4c018cb19ef5"}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/e0e95ed7-cfd7-40ea-8534-4c018cb19ef5/tasks 
+
+Query params {}
+
+Body {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"53f4a655-ad8b-4729-b8fe-e69f46015cd4","boardId":"e0e95ed7-cfd7-40ea-8534-4c018cb19ef5"}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /users/53f4a655-ad8b-4729-b8fe-e69f46015cd4 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/e0e95ed7-cfd7-40ea-8534-4c018cb19ef5/tasks/d1393d2b-4915-42dc-b4b5-a419bcd37934 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/e0e95ed7-cfd7-40ea-8534-4c018cb19ef5/tasks/16df27e9-7e0b-4577-9fa6-d19ee26778b3 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+204
+
+DELETE /boards/e0e95ed7-cfd7-40ea-8534-4c018cb19ef5/tasks/d1393d2b-4915-42dc-b4b5-a419bcd37934 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+204
+
+DELETE /boards/e0e95ed7-cfd7-40ea-8534-4c018cb19ef5/tasks/16df27e9-7e0b-4577-9fa6-d19ee26778b3 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/e0e95ed7-cfd7-40ea-8534-4c018cb19ef5 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f/tasks/dcafa9b8-4971-456c-a615-067f193ddaad 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+204
+
+DELETE /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f/tasks/08713f6d-344c-4ed3-a08f-884f6fa88b50 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+PUT /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f/tasks/137714cd-137f-482d-b776-fea668a0523d 
+
+Query params {}
+
+Body {"id":"137714cd-137f-482d-b776-fea668a0523d","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"cbd7b11c-a2b8-4098-83f1-2695abaa0c5f","columnId":null}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f/tasks/137714cd-137f-482d-b776-fea668a0523d 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f/tasks/dcafa9b8-4971-456c-a615-067f193ddaad 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+204
+
+DELETE /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f/tasks/dcafa9b8-4971-456c-a615-067f193ddaad 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f/tasks/dcafa9b8-4971-456c-a615-067f193ddaad 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/cbd7b11c-a2b8-4098-83f1-2695abaa0c5f 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/a7fb1135-340e-4472-8e7b-9570b75bb05b 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:09:59 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/b99bf35a-638f-4f7e-9a3d-c3ac013b976e 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+PUT /boards/a7f1c7d4-ff59-4d4d-93d9-ec582c30c2eb 
+
+Query params {}
+
+Body {"id":"a7f1c7d4-ff59-4d4d-93d9-ec582c30c2eb","title":"Autotest updated board","columns":[{"id":"da738880-f404-4df6-87df-0773cc3e41ed","title":"Backlog","order":1},{"id":"f0858351-243a-4205-b7ef-3e7103fa64d1","title":"Sprint","order":2}]}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/a7f1c7d4-ff59-4d4d-93d9-ec582c30c2eb 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/a7f1c7d4-ff59-4d4d-93d9-ec582c30c2eb 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/362e540a-8781-4491-bc94-f5d51ada1b8d 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/362e540a-8781-4491-bc94-f5d51ada1b8d 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks 
+
+Query params {}
+
+Body {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"d8980c39-1267-484a-95bc-800e5a7b4007","userId":null,"columnId":null}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks 
+
+Query params {}
+
+Body {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"d8980c39-1267-484a-95bc-800e5a7b4007","userId":null,"columnId":null}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks 
+
+Query params {}
+
+Body {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"d8980c39-1267-484a-95bc-800e5a7b4007","userId":null,"columnId":null}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks 
+
+Query params {}
+
+Body {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"d8980c39-1267-484a-95bc-800e5a7b4007","userId":null,"columnId":null}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks 
+
+Query params {}
+
+Body {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"d8980c39-1267-484a-95bc-800e5a7b4007","userId":null,"columnId":null}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks/6b511a72-5459-4728-9725-151cfee4e5b3 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks/b6b29b0a-eaa7-478c-9194-26c0a9cd9eca 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks/c43e5847-d768-4ecf-8a65-3dcf37606ebc 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks/ecda573d-88da-447a-8413-8f565f65efdf 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks/c29e0b16-da3e-4e48-a749-d4fc67c9e5d1 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/d8980c39-1267-484a-95bc-800e5a7b4007 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks/6b511a72-5459-4728-9725-151cfee4e5b3 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks/b6b29b0a-eaa7-478c-9194-26c0a9cd9eca 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks/ecda573d-88da-447a-8413-8f565f65efdf 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks/c29e0b16-da3e-4e48-a749-d4fc67c9e5d1 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/d8980c39-1267-484a-95bc-800e5a7b4007/tasks/c43e5847-d768-4ecf-8a65-3dcf37606ebc 
+
+Query params {}
+
+Body {}
+
+
+
+Thu Jun 17 2021 19:10:00 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/a7fb1135-340e-4472-8e7b-9570b75bb05b 
+
+Query params {}
+
+Body {}
+
+

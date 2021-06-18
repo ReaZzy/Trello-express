@@ -1,25 +1,28 @@
 import {
+  ArrType,
   CreateTaskType,
   DeleteDataType,
-  GetByIdType,
   GetTaskByBoardIdType,
   TaskType,
-  UpdateTaskDataType
+  UpdateTaskDataType,
 } from '../../types';
+import Task from './tasks.model';
+import {
+  getData, getById, setData, updateData,
+} from '../../db';
 
-const { Task } = require("./tasks.model")
-const {getData, getById, setData, updateData} = require("../../db")
+export const getTasksByBoardId:(_:ArrType, id:string) => Promise<TaskType[] | null> = async (
+  _, id,
+) => {
+  const candidate = await getData('tasks');
+  if (candidate) return candidate.filter((task:TaskType) => task.boardId === id);
+  return null;
+};
 
-const getTasksByBoardId:GetByIdType = async (_, id) =>{
-  const candidate = await getData("tasks")
-  if(candidate)  return candidate.filter((task:TaskType)=>task.boardId === id)
-  return null
-}
-
-const getTaskByBoardId:GetTaskByBoardIdType = async (_boardId, taskId) =>{
-  const candidate = await getById("tasks", taskId)
-  return candidate
-}
+export const getTaskByBoardId:GetTaskByBoardIdType = async (_boardId, taskId) => {
+  const candidate = await getById('tasks', taskId);
+  return candidate;
+};
 
 /**
  * Create new task
@@ -32,33 +35,31 @@ const getTaskByBoardId:GetTaskByBoardIdType = async (_boardId, taskId) =>{
  * @returns {Promise<Task>}
  *
  * @example
- * const task = await createTask("Fix menu", 1, "qwerty", "dasd-124asd", "34asdas-fds", "dsa5125r-dsadas")
+ * const task = await createTask(
+ * "Fix menu", 1, "qwerty", "dasd-124asd", "34asdas-fds", "dsa5125r-dsadas
+ * ")
  */
 
-const createTask:CreateTaskType = async (title,order,description,userId,boardId,columnId)=>{
-  const candidate = new Task({title,order,description,userId,boardId,columnId})
-  const tasks = await getData("tasks")
-  await setData("tasks", [...tasks, candidate])
-  return candidate
-}
+export const createTask:CreateTaskType = async (
+  title, order, description, userId, boardId, columnId,
+) => {
+  const candidate = new Task({
+    title, order, description, userId, boardId, columnId,
+  });
+  const tasks = await getData('tasks');
+  await setData('tasks', [...tasks, candidate]);
+  return candidate;
+};
 
-const deleteTask:DeleteDataType = async (_boardId, taskId) =>{
-  const tasks = await getData("tasks")
-  const filteredTasks = tasks.filter((task:TaskType) => task.id !== taskId)
-  const findedTask = tasks.find((task:TaskType) => task.id === taskId )
-  await setData("tasks", filteredTasks)
-  return !!findedTask
-}
+export const deleteTask:DeleteDataType = async (_boardId, taskId) => {
+  const tasks = await getData('tasks');
+  const filteredTasks = tasks.filter((task:TaskType) => task.id !== taskId);
+  const findedTask = tasks.find((task:TaskType) => task.id === taskId);
+  await setData('tasks', filteredTasks);
+  return !!findedTask;
+};
 
-const updateTask:UpdateTaskDataType = async (_boardId, taskId, object) =>{
-  const candidate = await updateData("tasks", {taskId, ...object})
-  return candidate
-}
-
-module.exports = {
-  getTasksByBoardId,
-  getTaskByBoardId,
-  createTask,
-  deleteTask,
-  updateTask,
-}
+export const updateTask:UpdateTaskDataType = async (_boardId, taskId, object) => {
+  const candidate = await updateData('tasks', { ...object, taskId } as TaskType);
+  return candidate;
+};

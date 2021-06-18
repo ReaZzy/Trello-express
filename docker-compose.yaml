@@ -10,7 +10,7 @@ services:
     environment:
       - PORT=${PORT}
     volumes:
-      - .:/usr/app
+      - ./src:/usr/app/src
       - node_modules:/usr/node/app/node_modules
     networks:
       - my-network

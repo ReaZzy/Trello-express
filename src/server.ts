@@ -1,6 +1,10 @@
-const { PORT } = require('./common/config.ts');
-const app = require('./app.ts');
+import { app } from './app';
+import { envConfig } from './common/config';
+import { connectToDb } from './common/db';
 
-app.listen(PORT, () =>
-  console.log(`App is running on http://localhost:${PORT}`)
+connectToDb().then(
+  () => {
+    app.listen(envConfig.PORT,
+      () => console.log(`App is running on http://localhost:${envConfig.PORT}`));
+  },
 );
