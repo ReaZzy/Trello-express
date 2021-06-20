@@ -1,3 +1,5 @@
+import { DeleteResult } from 'typeorm';
+
 export interface UserType {
   id: string,
   login: string,
@@ -8,6 +10,7 @@ export interface ColumnType {
   id: string,
   title: string,
   order: number
+  board: BoardType
 }
 
 export interface BoardType {
@@ -23,7 +26,7 @@ export interface TaskType{
   description: string,
   userId: string | null,
   boardId: string,
-  columnId: string
+  columnId: string | null
 }
 
 export interface DB {
@@ -39,6 +42,7 @@ export type SetDataType = (arr: ArrType, value: EntityType[]) => Promise<void>;
 export type GetByIdType = (arr:ArrType, id:string) => Promise<EntityType | null>;
 export type UpdateDataType = (arr:ArrType, data:EntityType) => Promise<EntityType | undefined>;
 export type DeleteDataType = (arr:ArrType, id:string) => Promise<boolean>;
+export type DeleteDataTypeTemp = (arr:ArrType, id:string) => Promise<DeleteResult>;
 export type GetTaskByBoardIdType = (boardId:string, taskId:string) => Promise<EntityType | undefined>;
 
 export type UpdateTaskDataType = (
