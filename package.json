@@ -9,8 +9,8 @@
   "description": "REST service starter for RS School",
   "main": "src/server.ts",
   "scripts": {
-    "start": "cross-env POSTGRES_HOST=localhost nodemon -L --watch '**/*.ts' --exec ts-node src/server.ts --exitcrash",
-    "start:docker": "nodemon -L --watch '**/*.ts' --exec ts-node src/server.ts --exitcrash",
+    "start": "nodemon -L --watch '**/*.ts' --exec ts-node src/server.ts --exitcrash",
+    "start:docker": "cross-env POSTGRES_HOST=postgres nodemon -L --watch '**/*.ts' --exec ts-node src/server.ts --exitcrash",
     "docs": "jsdoc -c jsdoc.json",
     "lint": "eslint --ext .js,.ts --fix src/",
     "typeorm": "ts-node ./node_modules/typeorm/cli.js --config=src/ormconfig.ts",
