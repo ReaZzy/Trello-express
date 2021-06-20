@@ -33,7 +33,9 @@ export const getBoardById:(_:ArrType, id:string) => Promise<Board | undefined> =
  * const board = await createBoard("Done", [])
  */
 
-export const createBoard:(title:string, columns:Column[]) => Promise<Board> = async (title, columns) => {
+export const createBoard:(
+  title:string, columns:Column[]
+) => Promise<Board> = async (title, columns) => {
   const boardRepository = getRepository(Board);
   const board = boardRepository.create({
     title,

@@ -3161,3 +3161,78 @@ Caught exception: Error: listen EADDRINUSE: address already in use :::4000
 Exception origin: uncaughtException
 
     
+[Sun Jun 20 2021 12:48:50 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: Error: getaddrinfo ENOTFOUND postgres
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 12:49:04 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: error: ���� ����� "trello" �� ����
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 12:49:15 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: error: ���� ����� "trello" �� ����
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 12:49:45 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: error: ���� ����� "trello" �� ����
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 12:49:52 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: error: ���� ����� "trello" �� ����
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 12:50:05 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: error: ���� ����� "trello" �� ����
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 12:51:20 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: error: ���� ����� "trello" �� ����
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 12:53:05 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: error: ���� ����� "trello" �� ����
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 13:27:15 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: Error: getaddrinfo ENOTFOUND postgres
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 13:45:36 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: Error: connect ECONNREFUSED 127.0.0.1:5432
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 13:49:29 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: Error: connect ECONNREFUSED 192.168.0.105:5432
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 14:36:31 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: Error: listen EADDRINUSE: address already in use :::4000
+Exception origin: uncaughtException
+
+    
+[Sun Jun 20 2021 14:37:18 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: відношення "Board" не існує
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 14:38:00 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: відношення "Board" не існує
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 14:43:14 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: відношення "Board" не існує
+Exception origin: [object Promise]
+
+    

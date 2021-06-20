@@ -43,15 +43,21 @@ export type GetByIdType = (arr:ArrType, id:string) => Promise<EntityType | null>
 export type UpdateDataType = (arr:ArrType, data:EntityType) => Promise<EntityType | undefined>;
 export type DeleteDataType = (arr:ArrType, id:string) => Promise<boolean>;
 export type DeleteDataTypeTemp = (arr:ArrType, id:string) => Promise<DeleteResult>;
-export type GetTaskByBoardIdType = (boardId:string, taskId:string) => Promise<EntityType | undefined>;
+export type GetTaskByBoardIdType = (
+  boardId:string, taskId:string
+) => Promise<EntityType | undefined>;
 
 export type UpdateTaskDataType = (
   boardId:string, taskId:string, data:TaskType
 ) => Promise<EntityType | undefined>;
 
-export type UpdateBoardDataType = (boardUpdate:BoardType, id:string) => Promise<EntityType | undefined>;
+export type UpdateBoardDataType = (
+  boardUpdate:BoardType, id:string
+) => Promise<EntityType | undefined>;
 
-export type CreateUserType = (name:string, login:string, password:string) => Promise<UserType | null>;
+export type CreateUserType = (
+  name:string, login:string, password:string
+) => Promise<UserType | null>;
 
 export type CreateTaskType = (
   title:string, order:number, description:string, userId:string, boardId:string, columnId:string
