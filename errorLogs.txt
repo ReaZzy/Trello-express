@@ -3236,3 +3236,13 @@ Caught exception: QueryFailedError: відношення "Board" не існує
 Exception origin: [object Promise]
 
     
+[Sun Jun 20 2021 16:46:53 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: Error: connect ECONNREFUSED 192.168.0.105:5432
+Exception origin: [object Promise]
+
+    
+[Sun Jun 20 2021 16:47:34 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: Error: connect ECONNREFUSED 127.0.0.1:5432
+Exception origin: [object Promise]
+
+    
