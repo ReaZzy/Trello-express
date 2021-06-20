@@ -1,12 +1,17 @@
-version: '3'
+version: '3.8'
 services:
   node:
+    container_name: node
+    env_file:
+      - .env
     build: ./
     restart: always
     depends_on:
       - postgres
+    ports:
+      - ${PORT}:${PORT}
     environment:
-      - PORT=${PORT}
+      PORT: ${PORT}
     volumes:
       - ./src:/usr/app/src
       - node_modules:/usr/node/app/node_modules
@@ -14,15 +19,18 @@ services:
     networks:
       - my-network
   postgres:
+    container_name: database
+    env_file:
+      - .env
     build: ./database/
+    image: reazzy/trello-express_postgres
     restart: always
     ports:
       - ${POSTGRES_PORT}:${POSTGRES_PORT}
     volumes:
       - dbdata:/data/db
+    hostname: postgres
     environment:
-      POSTGRES_PORT: ${POSTGRES_PORT}
-      POSTGRES_HOST: ${POSTGRES_HOST}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
@@ -30,6 +38,9 @@ services:
       - my-network
 
   pgadmin:
+    env_file:
+      - .env
+    container_name: pgadmin
     image: dpage/pgadmin4
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}

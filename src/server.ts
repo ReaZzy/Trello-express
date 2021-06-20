@@ -1,6 +1,6 @@
 import { app } from './app';
-import { envConfig } from './common/config';
 import { connectToDb } from './common/db';
+import { envConfig } from './ormconfig';
 
 connectToDb().then(
   () => {
