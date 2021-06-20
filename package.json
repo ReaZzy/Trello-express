@@ -9,7 +9,7 @@
   "description": "REST service starter for RS School",
   "main": "src/server.ts",
   "scripts": {
-    "start": "nnodemon -L --watch '**/*.ts' --exec ts-node src/server.ts --exitcrash",
+    "start": "nodemon -L --watch '**/*.ts' --exec ts-node src/server.ts --exitcrash",
     "docs": "jsdoc -c jsdoc.json",
     "lint": "eslint --ext .js,.ts --fix src/",
     "typeorm": "ts-node ./node_modules/typeorm/cli.js --config=src/ormconfig.ts",
