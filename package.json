@@ -9,11 +9,12 @@
   "description": "REST service starter for RS School",
   "main": "src/server.ts",
   "scripts": {
-    "start": "nodemon -L src/server.ts",
+    "start": "nnodemon -L --watch '**/*.ts' --exec ts-node src/server.ts --exitcrash",
     "docs": "jsdoc -c jsdoc.json",
     "lint": "eslint --ext .js,.ts --fix src/",
     "typeorm": "ts-node ./node_modules/typeorm/cli.js --config=src/ormconfig.ts",
     "db:create": "npm run typeorm migration:generate -- -n",
+    "db:run": "ts-node --transpile-only ./node_modules/typeorm/cli.js --config src/ormconfig.ts migration:run",
     "test": "cross-env DEBUG=rs:* jest --testMatch \"<rootDir>/test/e2e/test/*.test.js\" --noStackTrace --runInBand",
     "test:auth": "cross-env DEBUG=rs:* TEST_MODE=auth jest --noStackTrace"
   },

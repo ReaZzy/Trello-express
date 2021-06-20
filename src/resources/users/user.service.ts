@@ -4,7 +4,6 @@ import {
 } from '../../types';
 import User from './user';
 
-
 export const getAll = async () => {
   const userRepository = getRepository(User);
   const users = userRepository.find();

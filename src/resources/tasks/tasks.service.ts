@@ -14,7 +14,9 @@ export const getTasksByBoardId:(_:ArrType, id:string) => Promise<Task[]> = async
   return task;
 };
 
-export const getTaskByBoardId:(_boardId:string, taskId:string) => Promise<Task | undefined> = async (
+export const getTaskByBoardId:(
+  _boardId:string, taskId:string
+) => Promise<Task | undefined> = async (
   _boardId, taskId,
 ) => {
   const taskRepostitory = getRepository(Task);
@@ -38,7 +40,9 @@ export const getTaskByBoardId:(_boardId:string, taskId:string) => Promise<Task |
  * ")
  */
 
-export const createTask:(title:string, order:number, description:string, userId:string, boardId:string, columnId:string) => Promise<Task> = async (
+export const createTask:(
+  title:string, order:number, description:string, userId:string, boardId:string, columnId:string
+) => Promise<Task> = async (
   title, order, description, userId, boardId, columnId,
 ) => {
   const taskRepository = getRepository(Task);
