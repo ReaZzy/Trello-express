@@ -1,6 +1,5 @@
 import { createConnection } from 'typeorm';
-import { envConfig } from './config';
-import connectionOptions from '../ormconfig';
+import { connectionOptions, envConfig } from '../ormconfig';
 
 export const connectToDb = async () => {
   await createConnection(connectionOptions);
