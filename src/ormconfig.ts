@@ -16,7 +16,7 @@ const config = {
   database: process.env.POSTGRES_DB,
 };
 
-export const connectionOptions = {
+const connectionOptions = {
   type: 'postgres',
   host: config.host,
   port: config.port,
@@ -43,3 +43,4 @@ export const connectionOptions = {
 export const envConfig = {
   PORT: process.env.PORT,
 };
+export default connectionOptions;
