@@ -1,5 +1,5 @@
 import { Response, Request, Router } from 'express';
-import User from './user.model';
+import User from './user';
 import {
   getUserById, updateUser, deleteUser, createUser, getAll,
 } from './user.service';

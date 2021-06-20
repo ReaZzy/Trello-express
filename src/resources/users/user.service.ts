@@ -1,24 +1,33 @@
+import { getRepository } from 'typeorm';
 import {
-  GetByIdType, DeleteDataType, CreateUserType, TaskType, UserType,
+  GetByIdType, CreateUserType, UserType, DeleteDataTypeTemp,
 } from '../../types';
-import User from './user.model';
-import {
-  getData, getById, setData, updateData, deleteData,
-} from '../../db';
+import User from './user';
 
-export const getAll = async () => getData('users');
+
+export const getAll = async () => {
+  const userRepository = getRepository(User);
+  const users = userRepository.find();
+  return users;
+};
 
 export const getUserById:GetByIdType = async (_arr, id) => {
-  const users = await getById('users', id);
-  if (users) return User.toResponse(users);
+  const userRepository = getRepository(User);
+  const user = await userRepository.findOne(id);
+  if (user) return User.toResponse(user);
   return null;
 };
 
 type UpdateUserT = (data:UserType) => Promise<{ name: string; id: string; login: string } | null>;
 
 export const updateUser:UpdateUserT = async (data) => {
-  const newUsers = await updateData('users', data);
-  if (newUsers) return User.toResponse(newUsers);
+  const userRepository = getRepository(User);
+  const user = await userRepository.findOne(data.id);
+  const updatedUser = await userRepository.save({
+    ...user,
+    ...data,
+  });
+  if (updatedUser) return User.toResponse(updatedUser);
   return null;
 };
 
@@ -36,21 +45,20 @@ export const updateUser:UpdateUserT = async (data) => {
  */
 
 export const createUser:CreateUserType = async (name, login, password) => {
-  const candidate = new User({ name, login, password });
-  const users = await getAll();
-  await setData('users', [...users, candidate]);
-  if (candidate) return User.toResponse(candidate);
+  const userRepository = getRepository(User);
+  const user = userRepository.create({
+    login,
+    name,
+    password,
+  });
+  await userRepository.save(user);
+  if (user) return User.toResponse(user);
   return null;
 };
 
-export const deleteUser:DeleteDataType = async (_, id) => {
-  const deletedUser = await deleteData('users', id);
-  const tasks = await getData('tasks');
-  const filteredTasks = tasks.map((task: TaskType) => {
-    if (task.userId === id) return { ...task, userId: null };
-    return task;
-  });
-  await setData('tasks', filteredTasks);
+export const deleteUser:DeleteDataTypeTemp = async (_, id) => {
+  const userRepository = getRepository(User);
+  const deletedUser = await userRepository.delete(id);
 
   return deletedUser;
 };

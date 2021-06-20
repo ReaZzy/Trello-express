@@ -1,23 +1,23 @@
-import { v4 as uuid } from 'uuid';
-import { BoardType, ColumnType } from '../../types';
-import { Column } from './column.model';
+import {
+  Entity, PrimaryGeneratedColumn, Column, BaseEntity, OneToMany,
+} from 'typeorm';
 
-export default class Board implements BoardType {
+import { ColumnType } from '../../types';
+// eslint-disable-next-line import/no-cycle
+import { Column as column } from './column.model';
+
+@Entity('Board')
+export default class Board extends BaseEntity {
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
+  @Column('varchar', { length: 120 })
   title: string;
 
-  columns: Array<ColumnType>;
-
-  constructor({
-    id = uuid(),
-    title = 'Title',
-    columns = [],
-  } = {} as BoardType) {
-    this.id = id;
-    this.title = title;
-    this.columns = columns.map(
-      (column:ColumnType) => new Column({ title: column.title, order: column.order }),
-    );
-  }
+  @OneToMany(
+    () => column,
+    (colum) => colum.board,
+    { onDelete: 'CASCADE', cascade: true, eager: true },
+  )
+  columns!: ColumnType[];
 }

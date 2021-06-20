@@ -1,27 +1,25 @@
+import { getRepository } from 'typeorm';
 import {
   ArrType,
-  CreateTaskType,
   DeleteDataType,
-  GetTaskByBoardIdType,
-  TaskType,
   UpdateTaskDataType,
 } from '../../types';
 import Task from './tasks.model';
-import {
-  getData, getById, setData, updateData,
-} from '../../db';
 
-export const getTasksByBoardId:(_:ArrType, id:string) => Promise<TaskType[] | null> = async (
+export const getTasksByBoardId:(_:ArrType, id:string) => Promise<Task[]> = async (
   _, id,
 ) => {
-  const candidate = await getData('tasks');
-  if (candidate) return candidate.filter((task:TaskType) => task.boardId === id);
-  return null;
+  const taskRepostitory = getRepository(Task);
+  const task = await taskRepostitory.find({ boardId: id });
+  return task;
 };
 
-export const getTaskByBoardId:GetTaskByBoardIdType = async (_boardId, taskId) => {
-  const candidate = await getById('tasks', taskId);
-  return candidate;
+export const getTaskByBoardId:(_boardId:string, taskId:string) => Promise<Task | undefined> = async (
+  _boardId, taskId,
+) => {
+  const taskRepostitory = getRepository(Task);
+  const task = await taskRepostitory.findOne(taskId);
+  return task;
 };
 
 /**
@@ -40,26 +38,34 @@ export const getTaskByBoardId:GetTaskByBoardIdType = async (_boardId, taskId) =>
  * ")
  */
 
-export const createTask:CreateTaskType = async (
+export const createTask:(title:string, order:number, description:string, userId:string, boardId:string, columnId:string) => Promise<Task> = async (
   title, order, description, userId, boardId, columnId,
 ) => {
-  const candidate = new Task({
-    title, order, description, userId, boardId, columnId,
+  const taskRepository = getRepository(Task);
+  const task = taskRepository.create({
+    title,
+    order,
+    description,
+    userId,
+    boardId,
+    columnId,
   });
-  const tasks = await getData('tasks');
-  await setData('tasks', [...tasks, candidate]);
-  return candidate;
+  await taskRepository.save(task);
+  return task;
 };
 
 export const deleteTask:DeleteDataType = async (_boardId, taskId) => {
-  const tasks = await getData('tasks');
-  const filteredTasks = tasks.filter((task:TaskType) => task.id !== taskId);
-  const findedTask = tasks.find((task:TaskType) => task.id === taskId);
-  await setData('tasks', filteredTasks);
-  return !!findedTask;
+  const taskRepostitory = getRepository(Task);
+  const deletedTask = await taskRepostitory.delete(taskId);
+  return !!deletedTask;
 };
 
 export const updateTask:UpdateTaskDataType = async (_boardId, taskId, object) => {
-  const candidate = await updateData('tasks', { ...object, taskId } as TaskType);
-  return candidate;
+  const taskRepostitory = getRepository(Task);
+  const task = await taskRepostitory.findOne(taskId);
+  const updatedTask = await taskRepostitory.save({
+    ...task,
+    ...object,
+  });
+  return updatedTask;
 };

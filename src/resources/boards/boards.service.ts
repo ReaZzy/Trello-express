@@ -1,26 +1,25 @@
+import { getRepository } from 'typeorm';
 import {
-  ArrType, BoardType,
-  CreateBoardType,
-  DeleteDataType, EntityType,
-  GetDataType,
-  TaskType,
+  ArrType,
+  DeleteDataType,
   UpdateBoardDataType,
 } from '../../types';
 
 import Board from './boards.model';
-import {
-  getData, getById, setData, deleteData, updateData,
-} from '../../db';
+import { Column } from './column.model';
 
+export type GetDataType = (arr:ArrType) => Promise<Board[]>;
 export const getAllBoards:GetDataType = async () => {
-  const boards = await getData('boards');
+  const boardRepository = getRepository(Board);
+  const boards = await boardRepository.find();
   return boards;
 };
 
-export const getBoardById:(_:ArrType, id:string) => Promise<EntityType | undefined> = async (
+export const getBoardById:(_:ArrType, id:string) => Promise<Board | undefined> = async (
   _, id,
 ) => {
-  const boards = await getById('boards', id);
+  const boardRepository = getRepository(Board);
+  const boards = await boardRepository.findOne(id);
   return boards;
 };
 
@@ -34,23 +33,28 @@ export const getBoardById:(_:ArrType, id:string) => Promise<EntityType | undefin
  * const board = await createBoard("Done", [])
  */
 
-export const createBoard:CreateBoardType = async (title, columns) => {
-  const candidate:BoardType = await new Board({ title, columns } as BoardType);
-  await setData('boards', [...await getAllBoards('boards'), candidate]);
-  return candidate;
+export const createBoard:(title:string, columns:Column[]) => Promise<Board> = async (title, columns) => {
+  const boardRepository = getRepository(Board);
+  const board = boardRepository.create({
+    title,
+    columns,
+  });
+  await boardRepository.save(board);
+  return board;
 };
 
 export const updateBoard:UpdateBoardDataType = async (boardUpdate, id) => {
-  const candidate = await updateData('boards', { ...boardUpdate, id });
-  return candidate;
+  const boardRepository = getRepository(Board);
+  const board = await boardRepository.findOne(id);
+  const updatedBoard = await boardRepository.save({
+    ...board,
+    ...boardUpdate,
+  });
+  return updatedBoard;
 };
 
 export const deleteBoard:DeleteDataType = async (_, id) => {
-  const candidateDelete = await deleteData('boards', id);
-
-  const tasks = await getData('tasks');
-  const filteredTasks = tasks.filter((task:TaskType) => task.boardId !== id);
-  await setData('tasks', filteredTasks);
-
-  return !!candidateDelete;
+  const boardRepository = getRepository(Board);
+  const deletedUser = boardRepository.delete(id);
+  return !!deletedUser;
 };

@@ -1,10 +1,8 @@
 version: '3'
 services:
   node:
-    build: .
+    build: ./
     restart: always
-    ports:
-      - ${PORT}:${PORT}
     depends_on:
       - db
     environment:
@@ -23,6 +21,7 @@ services:
     volumes:
       - dbdata:/data/db
     environment:
+      PGPORG: ${POSTGRES_PORT}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}

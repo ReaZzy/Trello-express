@@ -1,21 +1,21 @@
-import { ColumnType } from '../../types';
+import {
+  Entity, PrimaryGeneratedColumn, Column as Colum, BaseEntity, ManyToOne,
+} from 'typeorm';
+import { BoardType } from '../../types';
+// eslint-disable-next-line import/no-cycle
+import Board from './boards.model';
 
-const { v4: uuid } = require('uuid');
-
-export class Column implements ColumnType {
+@Entity('Column')
+export class Column extends BaseEntity {
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
+  @Colum('varchar', { length: 120 })
   title: string;
 
+  @Colum()
   order: number;
 
-  constructor({
-    id = uuid(),
-    title = 'Title',
-    order = 1,
-  } = {}) {
-    this.id = id;
-    this.title = title;
-    this.order = order;
-  }
+  @ManyToOne(() => Board, { onDelete: 'CASCADE' })
+  board!: BoardType;
 }
