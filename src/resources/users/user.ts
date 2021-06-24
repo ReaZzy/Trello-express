@@ -1,7 +1,7 @@
 import {
   BaseEntity, Column, Entity, PrimaryGeneratedColumn,
 } from 'typeorm';
-import { EntityType } from '../../types';
+import { UserType } from '../../types';
 
 @Entity('User')
 export default class User extends BaseEntity {
@@ -17,7 +17,7 @@ export default class User extends BaseEntity {
   @Column('text')
   password: string;
 
-  static toResponse = (user:EntityType) => {
+  static toResponse = (user:UserType) => {
     if ('name' in user && 'login' in user && 'id' in user) {
       const { id, name, login } = user;
       return { id, name, login };
