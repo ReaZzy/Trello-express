@@ -3,7 +3,8 @@ import { DeleteResult } from 'typeorm';
 export interface UserType {
   id: string,
   login: string,
-  name: string
+  name: string,
+  password?:string
 }
 
 export interface ColumnType {

@@ -3,6 +3,8 @@ import { logger } from './middlewares/middlewares';
 import userRouter from './resources/users/user.router';
 import boardRouter from './resources/boards/boards.router';
 import tasksRouter from './resources/tasks/tasks.router';
+import loginRouter from './resources/login/login.routes';
+import { authenticateToken } from './middlewares/isAuth';
 
 const express = require('express');
 const path = require('path');
@@ -26,7 +28,9 @@ app.use('/', (req: Request, res: Response, next: NextFunction) => {
 
 app.use(logger.catchErrorMiddleware);
 app.all('*', logger.logRequestMiddleware);
+app.use(authenticateToken);
 
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards', tasksRouter);
+app.use('/login', loginRouter);

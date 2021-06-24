@@ -1,6 +1,7 @@
 import { getRepository } from 'typeorm';
+import { hash } from 'bcrypt';
 import {
-  GetByIdType, CreateUserType, UserType, DeleteDataTypeTemp,
+  CreateUserType, UserType, DeleteDataTypeTemp, ArrType,
 } from '../../types';
 import User from './user';
 
@@ -10,7 +11,7 @@ export const getAll = async () => {
   return users;
 };
 
-export const getUserById:GetByIdType = async (_arr, id) => {
+export const getUserById = async (_arr:ArrType, id:string):Promise<UserType | null> => {
   const userRepository = getRepository(User);
   const user = await userRepository.findOne(id);
   if (user) return User.toResponse(user);
@@ -45,10 +46,11 @@ export const updateUser:UpdateUserT = async (data) => {
 
 export const createUser:CreateUserType = async (name, login, password) => {
   const userRepository = getRepository(User);
+  const passwordHash = await hash(password, 10);
   const user = userRepository.create({
     login,
     name,
-    password,
+    password: passwordHash,
   });
   await userRepository.save(user);
   if (user) return User.toResponse(user);

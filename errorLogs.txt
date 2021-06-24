@@ -24,3 +24,8 @@ Caught exception: Error: listen EADDRINUSE: address already in use :::4000
 Exception origin: uncaughtException
 
     
+[Tue Jun 22 2021 21:36:28 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: TypeError: login is not a function
+Exception origin: [object Promise]
+
+    
