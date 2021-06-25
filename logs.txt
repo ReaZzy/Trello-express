@@ -41000,3 +41000,4241 @@ Query params {}
 Body {}
 
 
+
+Fri Jun 25 2021 10:13:32 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"admin","login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:38:21 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"admin","login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:38:22 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"admin","login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:38:22 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"admin","login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:38:23 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"admin","login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:38:23 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"admin","login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:38:24 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"admin","login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /boards/12345 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /boards/12345/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /boards/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /users/undefined 
+
+Query params {}
+
+Body {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /users/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users/123 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /users/12345 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /users/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /boards/undefined 
+
+Query params {}
+
+Body {"title":"Autotest updated board"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /boards/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /boards/undefined/tasks/undefined 
+
+Query params {}
+
+Body {"title":"Autotest updated task"}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:04 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /boards/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /boards/12345/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /boards/12345 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /boards/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users/123 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /users/12345 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /users/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /boards/undefined 
+
+Query params {}
+
+Body {"title":"Autotest updated board"}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /boards/undefined/tasks/undefined 
+
+Query params {}
+
+Body {"title":"Autotest updated task"}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /boards/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /boards/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /users/undefined 
+
+Query params {}
+
+Body {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /users/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:49:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:51:19 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:19 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:19 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /boards/12345 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /boards/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /boards/12345/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users/123 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /users/12345 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /users/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /boards/undefined/tasks/undefined 
+
+Query params {}
+
+Body {"title":"Autotest updated task"}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /boards/undefined 
+
+Query params {}
+
+Body {"title":"Autotest updated board"}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /boards/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /users/undefined 
+
+Query params {}
+
+Body {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /boards/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /users/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:51:20 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:51:37 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:53:46 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"admin","login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:54:06 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:06 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:06 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /boards/12345/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:54:06 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:54:06 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:06 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /boards/12345 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /boards/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /users/undefined 
+
+Query params {}
+
+Body {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users/123 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /users/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /boards/undefined 
+
+Query params {}
+
+Body {"title":"Autotest updated board"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /users/12345 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /users/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /boards/undefined/tasks/undefined 
+
+Query params {}
+
+Body {"title":"Autotest updated task"}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /boards/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:07 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /boards/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:50 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:52 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+304
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:54:52 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+304
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:12 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:12 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:12 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /boards/12345/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:55:12 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /boards/12345 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /boards/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards/undefined/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /users/undefined 
+
+Query params {}
+
+Body {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /boards/undefined/tasks/undefined 
+
+Query params {}
+
+Body {"title":"Autotest updated task"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards/undefined/tasks/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /users/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /boards/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+PUT /boards/undefined 
+
+Query params {}
+
+Body {"title":"Autotest updated board"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+DELETE /boards/undefined 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users/123 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /users/12345 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:55:13 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /users/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:55:21 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /users 
+
+Query params {}
+
+Body {"name":"admin","login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:55:28 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"string","password":"string"}
+
+
+
+Fri Jun 25 2021 10:55:34 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:55:37 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:55:44 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:56:15 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:56:26 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"string","password":"string"}
+
+
+
+Fri Jun 25 2021 10:56:48 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+403
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:58:29 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:58:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:58:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /boards/12345 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:58:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /boards/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /boards/12345/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:58:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:58:41 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /boards/12345/tasks/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+GET /users/123 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+PUT /users/12345 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+401
+
+DELETE /users/12345 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+POST /login 
+
+Query params {}
+
+Body {"login":"admin","password":"admin"}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /users 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4/tasks 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/eb144611-9026-4e4d-ab67-7d786d81907e 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4/tasks/73f972ee-fa65-4df4-8454-fcb30d615c36 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/d9e10a2f-ab26-4854-ba58-f9555b240d62 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+204
+
+DELETE /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4/tasks/8888b552-50e0-4985-85dd-d0e10a2d0be7 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /users/7dec2306-c809-47f2-998f-163b06ee59e4 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /users/7dec2306-c809-47f2-998f-163b06ee59e4 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4/tasks 
+
+Query params {}
+
+Body {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+PUT /boards/177a82df-ca7d-4259-920e-72411965fb0f 
+
+Query params {}
+
+Body {"title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}],"id":"177a82df-ca7d-4259-920e-72411965fb0f"}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/177a82df-ca7d-4259-920e-72411965fb0f 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/177a82df-ca7d-4259-920e-72411965fb0f 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+PUT /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4/tasks/36ff0f40-c975-4fd6-b95d-bf939a0bfe76 
+
+Query params {}
+
+Body {"id":"36ff0f40-c975-4fd6-b95d-bf939a0bfe76","title":"Autotest updated task","order":0,"description":"Lorem ipsum","boardId":"10e0321e-4415-4b11-b51b-c1cd4fec09e4","columnId":null,"userId":null}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4/tasks/36ff0f40-c975-4fd6-b95d-bf939a0bfe76 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/79991f46-da0c-4dd6-92a5-9ad9edca3729 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4/tasks/73f972ee-fa65-4df4-8454-fcb30d615c36 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/79991f46-da0c-4dd6-92a5-9ad9edca3729 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+204
+
+DELETE /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4/tasks/73f972ee-fa65-4df4-8454-fcb30d615c36 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4/tasks/73f972ee-fa65-4df4-8454-fcb30d615c36 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/10e0321e-4415-4b11-b51b-c1cd4fec09e4 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /users/60f3fb7b-cd0d-45e7-a313-977a837823e5 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks 
+
+Query params {}
+
+Body {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"ff7a87e9-f6a3-4f30-a286-777061abf74a","userId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:58:42 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks 
+
+Query params {}
+
+Body {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"ff7a87e9-f6a3-4f30-a286-777061abf74a","userId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+PUT /users/9d980144-49cf-4f7e-abde-2e07910f377a 
+
+Query params {}
+
+Body {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"9d980144-49cf-4f7e-abde-2e07910f377a"}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks 
+
+Query params {}
+
+Body {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"ff7a87e9-f6a3-4f30-a286-777061abf74a","userId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks 
+
+Query params {}
+
+Body {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"ff7a87e9-f6a3-4f30-a286-777061abf74a","userId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks 
+
+Query params {}
+
+Body {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"ff7a87e9-f6a3-4f30-a286-777061abf74a","userId":null,"columnId":null}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /users/9d980144-49cf-4f7e-abde-2e07910f377a 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks/0649f621-4fee-4b9a-839d-3c29b3a5ae7f 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /users/9d980144-49cf-4f7e-abde-2e07910f377a 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks/069f9113-6ba6-4655-9d4c-898974a8b063 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks/c08e70cc-8061-422d-bb3f-ea1c11275cdd 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks/117f8899-201e-47b6-82e7-b10204d92845 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks/acc5ad03-cfb1-46c9-be50-136495bd4c77 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks/0649f621-4fee-4b9a-839d-3c29b3a5ae7f 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks/069f9113-6ba6-4655-9d4c-898974a8b063 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks/c08e70cc-8061-422d-bb3f-ea1c11275cdd 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks/117f8899-201e-47b6-82e7-b10204d92845 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+404
+
+GET /boards/ff7a87e9-f6a3-4f30-a286-777061abf74a/tasks/acc5ad03-cfb1-46c9-be50-136495bd4c77 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/eb144611-9026-4e4d-ab67-7d786d81907e 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /users/46e52b68-8413-41e6-bc92-b620f24ef6af 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /users 
+
+Query params {}
+
+Body {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards 
+
+Query params {}
+
+Body {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/539c7953-e918-4960-bc4b-a5c400f4c380/tasks 
+
+Query params {}
+
+Body {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"1fb02051-0e35-4f8b-b59a-b79cd9f965d2","boardId":"539c7953-e918-4960-bc4b-a5c400f4c380"}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+201
+
+POST /boards/539c7953-e918-4960-bc4b-a5c400f4c380/tasks 
+
+Query params {}
+
+Body {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"1fb02051-0e35-4f8b-b59a-b79cd9f965d2","boardId":"539c7953-e918-4960-bc4b-a5c400f4c380"}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /users/1fb02051-0e35-4f8b-b59a-b79cd9f965d2 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/539c7953-e918-4960-bc4b-a5c400f4c380/tasks/db8213ca-5d5a-464f-b294-e768b393b79a 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+GET /boards/539c7953-e918-4960-bc4b-a5c400f4c380/tasks/540f2875-0609-42d9-9461-13a1609fcb00 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+204
+
+DELETE /boards/539c7953-e918-4960-bc4b-a5c400f4c380/tasks/db8213ca-5d5a-464f-b294-e768b393b79a 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+204
+
+DELETE /boards/539c7953-e918-4960-bc4b-a5c400f4c380/tasks/540f2875-0609-42d9-9461-13a1609fcb00 
+
+Query params {}
+
+Body {}
+
+
+
+Fri Jun 25 2021 10:58:43 GMT+0300 (за східноєвропейським літнім часом)
+----------------------------------------------
+
+200
+
+DELETE /boards/539c7953-e918-4960-bc4b-a5c400f4c380 
+
+Query params {}
+
+Body {}
+
+
