@@ -1,8 +1,7 @@
 import {
-  Entity, PrimaryGeneratedColumn, Column, BaseEntity, OneToMany,
+  Entity, PrimaryGeneratedColumn, Column, BaseEntity,
 } from 'typeorm';
 
-import { ColumnType } from '../../types';
 // eslint-disable-next-line import/no-cycle
 import { Column as column } from './column.model';
 
@@ -14,10 +13,6 @@ export default class Board extends BaseEntity {
   @Column('varchar', { length: 120 })
   title: string;
 
-  @OneToMany(
-    () => column,
-    (colum) => colum.board,
-    { onDelete: 'CASCADE', cascade: true, eager: true },
-  )
-  columns!: ColumnType[];
+  @Column('simple-json')
+  columns: column[];
 }

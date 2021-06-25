@@ -28,9 +28,10 @@ app.use('/', (req: Request, res: Response, next: NextFunction) => {
 
 app.use(logger.catchErrorMiddleware);
 app.all('*', logger.logRequestMiddleware);
+
+app.use('/login', loginRouter);
 app.use(authenticateToken);
 
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards', tasksRouter);
-app.use('/login', loginRouter);
