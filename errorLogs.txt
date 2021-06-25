@@ -29,3 +29,23 @@ Caught exception: TypeError: login is not a function
 Exception origin: [object Promise]
 
     
+[Thu Jun 24 2021 13:36:30 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+Exception origin: uncaughtException
+
+    
+[Thu Jun 24 2021 13:36:52 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+Exception origin: uncaughtException
+
+    
+[Thu Jun 24 2021 13:38:00 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+Exception origin: uncaughtException
+
+    
+[Fri Jun 25 2021 10:05:05 GMT+0300 (за східноєвропейським літнім часом)] uncaughtException 
+Caught exception: Error: listen EADDRINUSE: address already in use :::4000
+Exception origin: uncaughtException
+
+    
