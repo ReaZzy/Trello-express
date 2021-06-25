@@ -49,3 +49,123 @@ Caught exception: Error: listen EADDRINUSE: address already in use :::4000
 Exception origin: uncaughtException
 
     
+[Fri Jun 25 2021 10:17:52 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: синтаксична помилка в кінці введення
+Exception origin: [object Promise]
+
+    
+[Fri Jun 25 2021 10:20:31 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: стовпця "admin" не існує
+Exception origin: [object Promise]
+
+    
+[Fri Jun 25 2021 10:22:50 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: стовпця "admin" не існує
+Exception origin: [object Promise]
+
+    
+[Fri Jun 25 2021 10:27:54 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: стовпця "admin" не існує
+Exception origin: [object Promise]
+
+    
+[Fri Jun 25 2021 10:28:46 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: синтаксична помилка в або поблизу "User"
+Exception origin: [object Promise]
+
+    
+[Fri Jun 25 2021 10:29:30 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: стовпця "admin" не існує
+Exception origin: [object Promise]
+
+    
+[Fri Jun 25 2021 10:37:04 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: стовпця "admin" не існує
+Exception origin: [object Promise]
+
+    
+[Fri Jun 25 2021 10:37:41 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: стовпця "admin" не існує
+Exception origin: [object Promise]
+
+    
+[Fri Jun 25 2021 10:46:24 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: TSError: ⨯ Unable to compile TypeScript:
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m97[0m - [91merror[0m[90m TS2304: [0mCannot find name 'admin'.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                ~~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m102[0m - [91merror[0m[90m TS2554: [0mExpected 1-2 arguments, but got 9.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m106[0m - [91merror[0m[90m TS2304: [0mCannot find name 'admin'.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                         ~~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m115[0m - [91merror[0m[90m TS2304: [0mCannot find name '$2y$10$NAFUAbsCTN'.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                                  ~~~~~~~~~~~~~~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m133[0m - [91merror[0m[90m TS2304: [0mCannot find name 'LsNYKgwY0d'.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                                                    ~~~~~~~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m147[0m - [91merror[0m[90m TS2304: [0mCannot find name 'plOl8sdYe7dOWjqx'.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                                                                  ~~~~~~~~~~~~~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m165[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PSAdcWUoTS'.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                                                                                    ~~~~~~~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m97[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                ~~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m102[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                     ~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m106[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                         ~~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m111[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                              ~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m115[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                                  ~~~~~~~~~~~~~~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m165[0m - [91merror[0m[90m TS1351: [0mAn identifier or keyword cannot immediately follow a numeric literal.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                                                                                    ~~~~~~~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m163[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                                                                                  ~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m165[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                                                                                    ~~~~~~~~~~[0m
+[96mmigrations/1624604992061-migrate.ts[0m:[93m15[0m:[93m175[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m15[0m         await queryRunner.query('INSERT INTO "User"(id, name, login, password) VALUES(DEFAULT, 'admin', 'admin', '$2y$10$NAFUAbsCTN/LsNYKgwY0d.mA/plOl8sdYe7dOWjqx.1PSAdcWUoTS')')
+[7m  [0m [91m                                                                                                                                                                              ~~~[0m
+
+Exception origin: [object Promise]
+
+    
+[Fri Jun 25 2021 10:46:59 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: синтаксична помилка в або поблизу "'User'"
+Exception origin: [object Promise]
+
+    
+[Fri Jun 25 2021 10:50:22 GMT+0300 (за східноєвропейським літнім часом)] unhandledRejection 
+Caught exception: QueryFailedError: відношення "Board" вже існує
+Exception origin: [object Promise]
+
+    
