@@ -3,16 +3,17 @@ import {
   Controller,
   Delete,
   Get,
+  HttpStatus,
   Param,
   Post,
   Put,
+  Res,
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import User from './user.entity';
 import { UserDataDto } from './dto/user-data.dto';
 import { UserIdDto } from './dto/user-id.dto';
-import { UserUpdateDto } from './dto/user-update.dto';
-import { DeleteResult } from 'typeorm';
+import { Response } from 'express';
 
 @Controller('users')
 export class UsersController {
@@ -24,25 +25,31 @@ export class UsersController {
   }
 
   @Post()
-  async create(@Body() userDataDto: UserDataDto): Promise<User> {
-    return this.usersService.create(userDataDto);
+  async create(@Body() userData: UserDataDto): Promise<User> {
+    return this.usersService.create(userData);
   }
 
   @Get(':id')
-  async findById(@Param() userIdDto: UserIdDto): Promise<User> {
-    return this.usersService.findById(userIdDto);
+  async findById(@Param() userId: UserIdDto): Promise<User> {
+    return this.usersService.findById(userId);
   }
 
   @Put(':id')
   async update(
-    @Body() userUpdateDto: UserUpdateDto,
-    @Param() userIdDto: UserIdDto,
+    @Body() userUpdate: UserDataDto,
+    @Param() userId: UserIdDto,
   ): Promise<User> {
-    return this.usersService.update(userUpdateDto, userIdDto);
+    return this.usersService.update(userUpdate, userId);
   }
 
   @Delete(':id')
-  async delete(@Param() userIdDto: UserIdDto): Promise<DeleteResult> {
-    return this.usersService.delete(userIdDto);
+  async delete(@Param() userId: UserIdDto, @Res() res: Response) {
+    const user = await this.usersService.delete(userId);
+    if (user) {
+      return res
+        .status(HttpStatus.NO_CONTENT)
+        .json({ msg: 'The user has been deleted' });
+    }
+    return res.status(HttpStatus.NOT_FOUND).json({ msg: 'User not found' });
   }
 }

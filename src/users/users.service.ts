@@ -1,11 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import User from './user.entity';
-import { DeleteResult, Repository } from 'typeorm';
+import { Repository } from 'typeorm';
 import { UserDataDto } from './dto/user-data.dto';
 import { hash } from 'bcryptjs';
 import { UserIdDto } from './dto/user-id.dto';
-import { UserUpdateDto } from './dto/user-update.dto';
 
 @Injectable()
 export class UsersService {
@@ -14,8 +13,8 @@ export class UsersService {
     private userRepository: Repository<User>,
   ) {}
 
-  async create(userDataDto: UserDataDto): Promise<User> {
-    const { name, login, password } = userDataDto;
+  async create(userData: UserDataDto): Promise<User> {
+    const { name, login, password } = userData;
     const hashPassword = await hash(password, 10);
     const user = this.userRepository.create({
       name,
@@ -34,22 +33,25 @@ export class UsersService {
     return this.userRepository.find();
   }
 
-  async findById(userIdDto: UserIdDto): Promise<User> {
-    return this.userRepository.findOne(userIdDto);
+  async findById(userId: UserIdDto): Promise<User> {
+    return this.userRepository.findOne(userId);
   }
 
-  async update(
-    userUpdateDto: UserUpdateDto,
-    userIdDto: UserIdDto,
-  ): Promise<User> {
-    const user = await this.userRepository.findOne(userIdDto);
-    return this.userRepository.save({
+  async update(userUpdate: UserDataDto, userId: UserIdDto): Promise<User> {
+    const user = await this.userRepository.findOne(userId);
+    const updatedUser = await this.userRepository.save({
       ...user,
-      ...userUpdateDto,
+      ...userUpdate,
     });
+    return {
+      id: updatedUser.id,
+      name: updatedUser.name,
+      login: updatedUser.login,
+    } as User;
   }
 
-  async delete(userIdDto: UserIdDto): Promise<DeleteResult> {
-    return this.userRepository.delete(userIdDto.id);
+  async delete(userId: UserIdDto): Promise<boolean> {
+    const user = await this.userRepository.delete(userId);
+    return !!user;
   }
 }
