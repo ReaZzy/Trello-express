@@ -8,15 +8,17 @@ import {
   Post,
   Put,
   Res,
+  UseGuards,
 } from '@nestjs/common';
 import { Response } from 'express';
 import { BoardsService } from './boards.service';
 import Board from './board.entity';
 import { BoardDataDto } from './dto/board-data.dto';
 import { BoardIdDto } from './dto/board-id.dto';
-import { DeleteResult } from 'typeorm';
+import { AuthGuard } from '../guards/authGuard';
 
 @Controller('boards')
+@UseGuards(AuthGuard)
 export class BoardsController {
   constructor(private readonly boardsService: BoardsService) {}
 
@@ -31,8 +33,12 @@ export class BoardsController {
   }
 
   @Get(':id')
-  async findById(@Param() boardId: BoardIdDto): Promise<Board> {
-    return this.boardsService.findById(boardId);
+  async findById(@Param() boardId: BoardIdDto, @Res() res: Response) {
+    const board = await this.boardsService.findById(boardId);
+    if (!board) {
+      return res.status(HttpStatus.NOT_FOUND).json({ msg: 'Board not found' });
+    }
+    return res.status(HttpStatus.OK).json({ ...board });
   }
 
   @Put(':id')
@@ -44,7 +50,7 @@ export class BoardsController {
   }
 
   @Delete(':id')
-  async delete(@Param() boardId: BoardIdDto, @Res() res: Response) {
+  async delete(@Param('id') boardId: BoardIdDto, @Res() res: Response) {
     const board = await this.boardsService.delete(boardId);
     if (board) {
       return res

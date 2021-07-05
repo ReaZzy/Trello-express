@@ -1,3 +1,1 @@
-export class BoardIdDto {
-  readonly id: string;
-}
+export type BoardIdDto = string;

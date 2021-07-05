@@ -8,14 +8,17 @@ import {
   Post,
   Put,
   Res,
+  UseGuards,
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import User from './user.entity';
 import { UserDataDto } from './dto/user-data.dto';
 import { UserIdDto } from './dto/user-id.dto';
 import { Response } from 'express';
+import { AuthGuard } from '../guards/authGuard';
 
 @Controller('users')
+@UseGuards(AuthGuard)
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
@@ -43,7 +46,7 @@ export class UsersController {
   }
 
   @Delete(':id')
-  async delete(@Param() userId: UserIdDto, @Res() res: Response) {
+  async delete(@Param('id') userId: UserIdDto, @Res() res: Response) {
     const user = await this.usersService.delete(userId);
     if (user) {
       return res

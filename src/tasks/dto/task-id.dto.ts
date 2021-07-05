@@ -1,3 +1,1 @@
-export class TaskIdDto {
-  id: string;
-}
+export type TaskIdDto = string;

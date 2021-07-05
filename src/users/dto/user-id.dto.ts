@@ -1,3 +1,1 @@
-export class UserIdDto {
-  readonly id: string;
-}
+export type UserIdDto = string;

@@ -5,6 +5,7 @@ import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { BoardsModule } from './boards/boards.module';
 import { TasksModule } from './tasks/tasks.module';
+import { LoginModule } from './login/login.module';
 import connectionOptions from './ormconfig';
 
 @Module({
@@ -13,6 +14,7 @@ import connectionOptions from './ormconfig';
     UsersModule,
     BoardsModule,
     TasksModule,
+    LoginModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -11,6 +11,6 @@ export default class User extends BaseEntity {
   @Column('varchar', { length: 50 })
   login: string;
 
-  @Column('text', { select: false })
+  @Column('text')
   password: string;
 }

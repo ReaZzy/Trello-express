@@ -19,8 +19,8 @@ export class TasksService {
 
   async create(taskData: TaskDataDto, boardId: BoardIdDto): Promise<Task> {
     const task = await this.taskRepository.create({
-      boardId: boardId,
       ...taskData,
+      boardId,
     });
     return this.taskRepository.save(task);
   }
