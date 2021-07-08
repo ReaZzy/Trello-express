@@ -12,6 +12,7 @@ const config = {
   user: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,
   database: process.env.POSTGRES_DB,
+  migrationsRun: process.env.TYPEORM_MIGRATIONSRUN === 'true',
 };
 
 const connectionOptions = {
@@ -21,7 +22,7 @@ const connectionOptions = {
   username: config.user,
   password: config.password,
   database: config.database,
-  migrationsRun: true,
+  migrationsRun: config.migrationsRun,
   synchronize: false,
   logging: true,
   keepConnectionAlive: true,

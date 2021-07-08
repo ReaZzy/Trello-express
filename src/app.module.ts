@@ -7,6 +7,9 @@ import { BoardsModule } from './boards/boards.module';
 import { TasksModule } from './tasks/tasks.module';
 import { LoginModule } from './login/login.module';
 import connectionOptions from './ormconfig';
+import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
+import { HttpErrorFilter } from './middlewares/http-error.filter';
+import { LoggingInterceptor } from './middlewares/logging.interceptor';
 
 @Module({
   imports: [
@@ -17,6 +20,16 @@ import connectionOptions from './ormconfig';
     LoginModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [
+    AppService,
+    {
+      provide: APP_FILTER,
+      useClass: HttpErrorFilter,
+    },
+    {
+      provide: APP_INTERCEPTOR,
+      useClass: LoggingInterceptor,
+    },
+  ],
 })
 export class AppModule {}

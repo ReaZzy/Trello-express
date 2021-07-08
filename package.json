@@ -9,11 +9,6 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "nest start",
-    "start:docker": "cross-env POSTGRES_HOST=postgres nest start",
-    "start:dev": "nest start --watch",
-    "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js --config src/ormconfig.ts",
     "db:create": "npm run typeorm migration:generate -- -d src/migrations -n",
@@ -22,7 +17,12 @@
     "test:auth": "cross-env TEST_MODE=auth jest --testMatch \"<rootDir>/test/e2e/**/*.test.js\" --noStackTrace",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "start": "npm run db:run && nest start",
+    "start:docker": "cross-env POSTGRES_HOST=postgres TYPEORM_MIGRATIONSRUN=true nest start",
+    "start:dev": "npm run db:run && nest start --watch",
+    "start:debug": "npm run db:run && nest start --debug --watch",
+    "start:prod": "npm run db:run && node dist/main"
   },
   "dependencies": {
     "@nestjs/common": "^7.6.15",

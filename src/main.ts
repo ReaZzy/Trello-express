@@ -13,5 +13,6 @@ async function bootstrap() {
   SwaggerModule.setup('doc', app, swaggerDocument);
   await createAdmin();
   await app.listen(process.env.PORT || 4000);
+  console.log(' App is running 🚀\n', `http://localhost:${process.env.PORT}`);
 }
 bootstrap();
