@@ -12,7 +12,6 @@ import {
 } from '@nestjs/common';
 import { Response } from 'express';
 import { BoardsService } from './boards.service';
-import Board from './board.entity';
 import { BoardDataDto } from './dto/board-data.dto';
 import { BoardIdDto } from './dto/board-id.dto';
 import { AuthGuard } from '../guards/authGuard';
@@ -23,30 +22,37 @@ export class BoardsController {
   constructor(private readonly boardsService: BoardsService) {}
 
   @Get()
-  async findAll(): Promise<Board[]> {
-    return this.boardsService.findAll();
+  async findAll(@Res() res: Response): Promise<Response> {
+    const board = await this.boardsService.findAll();
+    return res.status(HttpStatus.OK).send(board);
   }
 
   @Post()
-  async create(@Body() boardData: BoardDataDto): Promise<Board> {
-    return this.boardsService.create(boardData);
+  async create(
+    @Res() res: Response,
+    @Body() boardData: BoardDataDto,
+  ): Promise<Response> {
+    const board = await this.boardsService.create(boardData);
+    return res.status(HttpStatus.CREATED).send(board);
   }
 
   @Get(':id')
   async findById(@Param() boardId: BoardIdDto, @Res() res: Response) {
     const board = await this.boardsService.findById(boardId);
     if (!board) {
-      return res.status(HttpStatus.NOT_FOUND).json({ msg: 'Board not found' });
+      return res.status(HttpStatus.NOT_FOUND).send({ msg: 'Board not found' });
     }
-    return res.status(HttpStatus.OK).json({ ...board });
+    return res.status(HttpStatus.OK).send(board);
   }
 
   @Put(':id')
   async update(
+    @Res() res: Response,
     @Body() boardUpdate: BoardDataDto,
     @Param() boardId: BoardIdDto,
-  ): Promise<Board> {
-    return this.boardsService.update(boardUpdate, boardId);
+  ): Promise<Response> {
+    const board = await this.boardsService.update(boardUpdate, boardId);
+    return res.status(HttpStatus.OK).send(board);
   }
 
   @Delete(':id')
@@ -55,8 +61,8 @@ export class BoardsController {
     if (board) {
       return res
         .status(HttpStatus.NO_CONTENT)
-        .json({ msg: 'The board has been deleted' });
+        .send({ msg: 'The board has been deleted' });
     }
-    return res.status(HttpStatus.NOT_FOUND).json({ msg: 'Board not found' });
+    return res.status(HttpStatus.NOT_FOUND).send({ msg: 'Board not found' });
   }
 }

@@ -16,14 +16,13 @@ export class AuthGuard implements CanActivate {
     const req = ctx.switchToHttp().getRequest();
     try {
       const token = req.headers?.authorization?.split(' ')[1];
-      console.log(token);
       if (!token) {
-        res.status(HttpStatus.UNAUTHORIZED).json({ msg: 'Unauthorized' });
+        res.status(HttpStatus.UNAUTHORIZED).send({ msg: 'Unauthorized' });
         return false;
       }
-      jwt.verify(token, process.env.JWT_SECRET_KEY!, (err: Error, user) => {
+      jwt.verify(token, process.env.JWT_SECRET_KEY, (err: Error, user) => {
         if (err) {
-          res.status(HttpStatus.FORBIDDEN).json({ msg: 'Wrong token' });
+          res.status(HttpStatus.FORBIDDEN).send({ msg: 'Wrong token' });
           return false;
         }
         req.user = user;
@@ -31,7 +30,7 @@ export class AuthGuard implements CanActivate {
       });
       return true;
     } catch (e) {
-      res.status(HttpStatus.FORBIDDEN).json({ msg: 'Wrong token' });
+      res.status(HttpStatus.FORBIDDEN).send({ msg: 'Wrong token' });
       return false;
     }
   }

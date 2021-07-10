@@ -13,6 +13,6 @@ export class LoginController {
     if (!token) {
       return res.status(HttpStatus.FORBIDDEN).send();
     }
-    return res.status(HttpStatus.OK).json({ token });
+    return res.status(HttpStatus.OK).send({ token });
   }
 }

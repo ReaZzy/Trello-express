@@ -11,7 +11,6 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { TasksService } from './tasks.service';
-import Task from './tasks.entity';
 import { TaskDataDto } from './dto/task-data.dto';
 import { TaskIdDto } from './dto/task-id.dto';
 import { Response } from 'express';
@@ -24,43 +23,57 @@ export class TasksController {
   constructor(private readonly tasksService: TasksService) {}
 
   @Get()
-  async findAll(@Param('boardId') boardId: BoardIdDto): Promise<Task[]> {
-    return this.tasksService.findAll(boardId);
+  async findAll(
+    @Res() res: Response,
+    @Param('boardId') boardId: BoardIdDto,
+  ): Promise<Response> {
+    const task = await this.tasksService.findAll(boardId);
+    return res.status(HttpStatus.OK).send(task);
   }
 
   @Post()
   async create(
+    @Res() res: Response,
     @Body() taskData: TaskDataDto,
     @Param('boardId') boardId: BoardIdDto,
-  ): Promise<Task> {
-    return this.tasksService.create(taskData, boardId);
+  ): Promise<Response> {
+    const task = await this.tasksService.create(taskData, boardId);
+    return res.status(HttpStatus.CREATED).send(task);
   }
 
   @Get(':id')
-  async findById(@Param('id') taskId: TaskIdDto, @Res() res: Response) {
+  async findById(
+    @Param('id') taskId: TaskIdDto,
+    @Res() res: Response,
+  ): Promise<Response> {
     const task = await this.tasksService.findById(taskId);
     if (!task) {
-      return res.status(HttpStatus.NOT_FOUND).json({ msg: 'Board not found' });
+      return res.status(HttpStatus.NOT_FOUND).send({ msg: 'Board not found' });
     }
-    return res.status(HttpStatus.OK).json({ ...task });
+    return res.status(HttpStatus.OK).send({ ...task });
   }
 
   @Put(':id')
   async update(
+    @Res() res: Response,
     @Body() taskData: TaskDataDto,
     @Param('id') taskId: TaskIdDto,
-  ): Promise<Task> {
-    return this.tasksService.update(taskData, taskId);
+  ): Promise<Response> {
+    const task = await this.tasksService.update(taskData, taskId);
+    return res.status(HttpStatus.OK).send(task);
   }
 
   @Delete(':id')
-  async delete(@Param('id') taskId: TaskIdDto, @Res() res: Response) {
+  async delete(
+    @Param('id') taskId: TaskIdDto,
+    @Res() res: Response,
+  ): Promise<Response> {
     const task = await this.tasksService.delete(taskId);
     if (task) {
       return res
         .status(HttpStatus.NO_CONTENT)
-        .json({ msg: 'The task has been deleted' });
+        .send({ msg: 'The task has been deleted' });
     }
-    return res.status(HttpStatus.NOT_FOUND).json({ msg: 'Task not found' });
+    return res.status(HttpStatus.NOT_FOUND).send({ msg: 'Task not found' });
   }
 }
