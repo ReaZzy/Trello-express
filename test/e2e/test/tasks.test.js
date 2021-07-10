@@ -42,9 +42,7 @@ describe('Tasks suite', () => {
       .post(routes.tasks.create(testBoardId))
       .set('Accept', 'application/json')
       .send(TEST_TASK_DATA)
-      .then(res => {
-        testTaskId = res.body.id;
-      });
+      .then(res => (testTaskId = res.body.id));
   });
 
   afterAll(async () => {
