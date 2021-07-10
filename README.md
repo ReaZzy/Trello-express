@@ -1,72 +1,47 @@
-# RS School REST service
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+</p>
 
-## Prerequisites
+## Compare express and fastify
+⠀            |Meaning                           | Express       | Fastify
+------------ |--------------------------------- | ------------- | -------------
+Requests     | [total, rate, throughput]        | 100, 100, 100 | 100, 100, 100
+Duration     | [total, attack, wait]            | 100, 100, 100 | 100, 100, 100
+Latencies    | [min, mean, 50, 90, 95, 99, max] | 100, 100, 100 | 100, 100, 100
+Success      | [ratio]                          | 100, 100, 100 | 100, 100, 100
+Status Codes | [code:count]                     | 100, 100, 100 | 100, 100, 100
 
-- Git - [Download & Install Git](https://git-scm.com/downloads).
-- Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager.
+## Installation
 
-## Downloading
-
-```
-git clone {repository URL}
-```
-
-## Installing NPM modules
-
-```
-npm install
-```
-
-## Running application
-
-```
-npm start
+```bash
+$ npm install
 ```
 
-After starting the app on port (4000 as default) you can open
-in your browser OpenAPI documentation by typing http://localhost:4000/doc/.
-For more information about OpenAPI/Swagger please visit https://swagger.io/.
+## Running the app
 
-## Testing
+```bash
+# development
+$ npm run start
 
-After application running open new terminal and enter:
+# watch mode
+$ npm run start:dev
 
-To run all tests without authorization
-
-```
-npm test
-```
-
-To run only one of all test suites (users, boards or tasks)
-
-```
-npm test <suite name>
+# production mode
+$ npm run start:prod
 ```
 
-To run all test with authorization
+## Running the app with docker
 
-```
-npm run test:auth
-```
-
-To run only specific test suite with authorization (users, boards or tasks)
-
-```
-npm run test:auth <suite name>
+```bash
+$ docker-compose up
 ```
 
-## Development
+## Test
 
-If you're using VSCode, you can get a better developer experience from integration with [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions.
+```bash
+# unit tests
+$ npm run test
 
-### Auto-fix and format
-
+# auth tests
+$ npm run test:auth
 ```
-npm run lint
-```
-
-### Debugging in VSCode
-
-Press <kbd>F5</kbd> to debug.
-
-For more information, visit: https://code.visualstudio.com/docs/editor/debugging
