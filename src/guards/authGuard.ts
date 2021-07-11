@@ -20,12 +20,11 @@ export class AuthGuard implements CanActivate {
         res.status(HttpStatus.UNAUTHORIZED).send({ msg: 'Unauthorized' });
         return false;
       }
-      jwt.verify(token, process.env.JWT_SECRET_KEY, (err: Error, user) => {
+      jwt.verify(token, process.env.JWT_SECRET_KEY, (err: Error) => {
         if (err) {
           res.status(HttpStatus.FORBIDDEN).send({ msg: 'Wrong token' });
           return false;
         }
-        req.user = user;
         return true;
       });
       return true;

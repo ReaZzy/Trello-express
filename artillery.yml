@@ -23,6 +23,8 @@ scenarios:
           url: "/users"
           headers:
             authorization: "Bearer {{ token }}"
+          expect:
+            - statusCode: 200
       - post:
           url: "/users"
           headers:
@@ -34,10 +36,14 @@ scenarios:
           capture:
             - json: $.id
               as: user_id
+          expect:
+            - statusCode: 201
       - get:
           url: "/users/{{ user_id }}"
           headers:
             authorization: "Bearer {{ token }}"
+          expect:
+            - statusCode: 200
       - put:
           url: "/users/{{ user_id }}"
           headers:
@@ -46,3 +52,11 @@ scenarios:
             name: "Bro"
             login: "Brobro"
             password: "SuperSecretPassword"
+          expect:
+              - statusCode: 200
+      - delete:
+          url: "/users/{{ user_id }}"
+          headers:
+            authorization: "Bearer {{ token }}"
+          expect:
+            - statusCode: 204
