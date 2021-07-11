@@ -26,7 +26,7 @@ async function bootstrap() {
   const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
   SwaggerModule.setup('doc', app, swaggerDocument);
   await createAdmin();
-  await app.listen(process.env.PORT || 4000, isFastify? '0.0.0.0': undefined);
+  await app.listen(process.env.PORT || 4000, isFastify ? '0.0.0.0' : undefined);
   console.log(' App is running 🚀\n', `http://localhost:${process.env.PORT}`);
 }
 bootstrap();
