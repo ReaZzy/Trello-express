@@ -56,7 +56,7 @@
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.6.0",
     "swagger-ui-express": "4.1.6",
-    "ts-node": "^10.0.0",
+    "ts-node": "^10.1.0",
     "typeorm": "^0.2.34",
     "uuid": "8.3.2",
     "yamljs": "0.3.0"
