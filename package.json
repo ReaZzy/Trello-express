@@ -52,7 +52,7 @@
     "bcrypt": "^5.0.1",
     "cross-env": "7.0.3",
     "dotenv": "9.0.2",
-    "express": "4.17.1",
+    "express": "4.17.2",
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.6.0",
     "swagger-ui-express": "4.2.0",
