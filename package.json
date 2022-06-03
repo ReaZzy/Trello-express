@@ -55,7 +55,7 @@
     "express": "4.17.2",
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.6.0",
-    "swagger-ui-express": "4.3.0",
+    "swagger-ui-express": "4.4.0",
     "ts-node": "^10.0.0",
     "typeorm": "^0.2.41",
     "uuid": "8.3.2",
